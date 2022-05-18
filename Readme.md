@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Кириллов](https://up.htmlacademy.ru/htmlcss/34/user/2053295).
-* Наставник: <a href="https://htmlacademy.ru/profile/amaringo">Денис Власов</a>.
+* Наставник: [Денис Власов](https://htmlacademy.ru/profile/amaringo).
 
 ---
 
