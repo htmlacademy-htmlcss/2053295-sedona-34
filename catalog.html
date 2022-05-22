@@ -8,7 +8,9 @@
 
 <body>
   <header class="page-header">
-    <img src="" alt="логотип" class="logo">
+    <a href="index.html" class="navigation-logo">
+      <img src="" alt="логотип" class="logo">
+    </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
@@ -22,7 +24,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a href="catalog.html" class="navigation-link">
+          <a href="catalog.html" class="navigation-link navigation-link-current">
             Гостиницы
           </a>
         </li>
@@ -50,15 +52,17 @@
       </ul>
     </nav>
   </header>
-  <main class="catalog">
-    <form action="https://echo.htmlacademy.ru/courses" method="post" oninput="price.value=range.value">
-      <h2>
+  <main class="main-inner">
+    <header class="inner-header">
+      <h1>
         Гостиницы Седоны
-      </h2>
-      <p>
-        <!--Не понял что здесь должно быть и написал параграф-->
-        гостиницы
-      </p>
+      </h1>
+    </header>
+    <p>
+      <!--Не понял что здесь должно быть и написал параграф-->
+      гостиницы
+    </p>
+    <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="price.value=range.value">
       <fieldset>
         <legend>
           Инфраструктура:
@@ -66,17 +70,17 @@
         <ul>
           <li>
             <label>
-              <input type="checkbox" checked> Бассейн
+              <input type="checkbox" name="pool" value="Бассейн" checked> Бассейн
             </label>
           </li>
           <li>
             <label>
-              <input type="checkbox" checked> Парковка
+              <input type="checkbox" name="parking" value="Парковка" checked> Парковка
             </label>
           </li>
           <li>
             <label>
-              <input type="checkbox"> wi-fi
+              <input type="checkbox" name="wi-fi" value="wi-fi"> wi-fi
             </label>
           </li>
         </ul>
@@ -119,7 +123,7 @@
             </td>
           </tr>
         </table>
-        <input type="range" name="range" min="1" max="9000" step="1">
+        <input type="range" name="range" min="0" max="9000" step="1">
       </fieldset>
       <button type="submit">
         Применить
@@ -128,6 +132,105 @@
         Сбросить
       </button>
     </form>
+    <section class="search-results">
+      <h2 class="visually-hidden">
+        Результат поиска
+      </h2>
+      <p>
+        Найдено гостиниц: <span>38</span>
+      </p>
+      <select class="select-control" name="sorting" aria-label="Сортировка">
+        <option value="cheap">
+          Сначала дешёвые
+        </option>
+        <option value="popular">
+          Сначала популярные
+        </option>
+        <option value="expensive">
+          Сначала дорогие
+        </option>
+      </select>
+      <ul class="view-selection-list">
+        <li class="view-selection-item">
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </li>
+        <li class="view-selection-item">
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать ???</span>
+          </a>
+        </li>
+        <li class="view-selection-item">
+          <a href="#" class="button">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="booking-cards-list">
+        <li class="booking-card">
+          <img src="" alt="Вид из гостиницы">
+        <h3 class="booking-card-title">
+          Amara Resort & Spa
+        </h3>
+        <span class="booking-card-description">Гостиница</span>
+        <b class="booking-card-price">От 4000 ₽</b>
+        <a href="#" class="button">
+          подробнее
+        </a>
+        <a href="#" class="button"><!--Или тут всё таки кнопка?-->
+          в избранное
+        </a>
+        <p>Рейтинг: <span>8,5</span></p>
+        </li>
+        <li class="booking-card">
+          <img src="" alt="Вид из гостиницы">
+        <h3 class="booking-card-title">
+          Villas at Poco Diablo
+        </h3>
+        <span class="booking-card-description">Гостиница</span>
+        <b class="booking-card-price">От 5000 ₽</b>
+        <a href="#" class="button">
+          подробнее
+        </a>
+        <a href="#" class="button"><!--Или тут всё таки кнопка?-->
+          в избранное
+        </a>
+        <p>Рейтинг: <span>9,2</span></p>
+        </li>
+        <li class="booking-card">
+          <img src="" alt="Вид из гостиницы">
+        <h3 class="booking-card-title">
+          Desert Quail Inn
+        </h3>
+        <span class="booking-card-description">Гостиница</span>
+        <b class="booking-card-price">От 2500 ₽</b>
+        <a href="#" class="button">
+          подробнее
+        </a>
+        <a href="#" class="button"><!--Или тут всё таки кнопка?-->
+          в избранное
+        </a>
+        <p>Рейтинг: <span>6,9</span></p>
+        </li>
+        <li class="booking-card">
+          <img src="" alt="Вид из гостиницы">
+        <h3 class="booking-card-title">
+          GreenTree Inn
+        </h3>
+        <span class="booking-card-description">Гостиница</span>
+        <b class="booking-card-price">От 1500 ₽</b>
+        <a href="#" class="button">
+          подробнее
+        </a>
+        <a href="#" class="button"><!--Или тут всё таки кнопка?-->
+          в избранное
+        </a>
+        <p>Рейтинг: <span>5,0</span></p>
+        </li>
+
+      </ul>
+    </section>
     <section class="subscribe">
       <h2 class="visually-hidden">
         подписка на рассылку
