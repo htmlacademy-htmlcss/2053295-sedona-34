@@ -12,7 +12,7 @@
     <nav class="navigation">
       <ul class="navigation-list navigation-site">
         <li class="navigation-item">
-          <a href="index.html" class="navigation-link">
+          <a href="index.html" class="navigation-link navigation-link-current">
             Главная
           </a>
         </li>
@@ -171,6 +171,67 @@
           Подписаться
         </button>
       </form>
+    </section>
+    <!--Модальное окно-->
+    <section class="modal">
+      <h2>
+        Поиск гостиницы в Седоне
+      </h2>
+      <button class="button" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <form action="" class="modal-form">
+        <fieldset>
+          <legend class="visually-hidden">
+            Даты посещения
+          </legend>
+          <label>
+            Дата заезда:<input type="date">
+          </label>
+          <p>
+            Мы не можем отправить вас в прошлое.
+          </p>
+          <label>
+            Дата выезда:<input type="date">
+          </label>
+        </fieldset>
+        <p>
+          На эти даты есть свободные номера. Пока есть.
+        </p>
+        <fieldset>
+          <legend class="visually-hidden">
+            Количество постояльцев
+          </legend>
+            <span>Взрослые:</span>
+            <button type="button">
+              -
+            </button>
+            <input type="text">
+            <button type="button">
+              +
+            </button>
+            <span>Дети:</span>
+            <span>i</span>
+            <button type="button">
+              -
+            </button>
+            <input type="text">
+            <button type="button">
+              +
+            </button>
+        </fieldset>
+        <a href="#" class="modal-link">
+          Найти
+        </a>
+      </form>
+      <section class="hover-modal">
+        <h3>
+          Условия размещения детей
+        </h3>
+        <p>
+          Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+        </p>
+      </section>
     </section>
   </main>
   <footer class="page-footer">
