@@ -146,7 +146,7 @@
     </section>
     <section class="booking">
       <h2 class="visually-hidden">
-        Поиск гостинницы в седоне
+        Поиск гостиницы в Седоне
       </h2>
       <p>
         Заинтересовались?
@@ -155,7 +155,7 @@
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a href="#" class="button">
-        Поиск гостинницы в седоне
+        Поиск гостиницы в Седоне
       </a>
     </section>
     <section class="subscribe">
@@ -177,14 +177,17 @@
     <ul class="networks-list">
       <li class="networks-item">
         <a href="https://twitter.com/htmlacademy_ru" class="network-link network-link-twitter">
+          <span class="visually-hidden">Наш Твиттер</span>
         </a>
       </li>
       <li class="networks-item">
         <a href="https://www.facebook.com/htmlacademy" class="network-link network-link-facebook">
+          <span class="visually-hidden">Наш фейсбук</span>
         </a>
       </li>
       <li class="networks-item">
         <a href="https://www.youtube.com/c/HTMLAcademyRUS" class="network-link network-link-youtube">
+          <span class="visually-hidden">Наш канал на ютубе</span>
         </a>
       </li>
     </ul>
@@ -199,22 +202,22 @@
       <h2>
         Поиск гостиницы в Седоне
       </h2>
-      <button class="button" type="button">
-        <span class="visually-hidden">Закрыть</span>
+      <button class="modal-close-button" type="button">
+        <span>Закрыть</span>
       </button>
-      <form action="" class="modal-form">
+      <form action="https://echo.htmlacademy.ru" class="modal-form" method="post">
         <fieldset>
           <legend class="visually-hidden">
             Даты посещения
           </legend>
           <label>
-            Дата заезда:<input type="date">
+            Дата заезда:<input type="date" name="arrival-date">
           </label>
           <p>
             Мы не можем отправить вас в прошлое.
           </p>
           <label>
-            Дата выезда:<input type="date">
+            Дата выезда:<input type="date" name="departure-date">
           </label>
         </fieldset>
         <p>
@@ -228,7 +231,7 @@
           <button type="button">
             -
           </button>
-          <input type="text">
+          <input type="text" name="number-adults">
           <button type="button">
             +
           </button>
@@ -237,14 +240,14 @@
           <button type="button">
             -
           </button>
-          <input type="text">
+          <input type="text" name="number-children">
           <button type="button">
             +
           </button>
         </fieldset>
-        <a href="#" class="modal-link">
+        <button type="submit">
           Найти
-        </a>
+        </button>
       </form>
       <section class="hover-modal">
         <h3>

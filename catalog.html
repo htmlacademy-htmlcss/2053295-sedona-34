@@ -173,15 +173,14 @@
           <h3 class="booking-card-title">
             Amara Resort & Spa
           </h3>
-          <span class="booking-card-description">Гостиница</span>
-          <b class="booking-card-price">От 4000 ₽</b>
+          <span class="booking-type">Гостиница</span>
+          <b class="booking-price">От 4000 ₽</b>
           <a href="#" class="button">
             подробнее
           </a>
-          <a href="#" class="button">
-            <!--Или тут всё таки кнопка?-->
+          <button class="button-favorites">
             в избранное
-          </a>
+          </button>
           <p>Рейтинг: <span>8,5</span></p>
         </li>
         <li class="booking-card">
@@ -194,9 +193,9 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <a href="#" class="button">
+          <button class="button-favorites">
             в избранное
-          </a>
+          </button>
           <p>Рейтинг: <span>9,2</span></p>
         </li>
         <li class="booking-card">
@@ -209,9 +208,9 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <a href="#" class="button">
+          <button class="button-favorites">
             в избранное
-          </a>
+          </button>
           <p>Рейтинг: <span>6,9</span></p>
         </li>
         <li class="booking-card">
@@ -224,9 +223,9 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <a href="#" class="button">
+          <button class="button-favorites">
             в избранное
-          </a>
+          </button>
           <p>Рейтинг: <span>5,0</span></p>
         </li>
       </ul>
@@ -255,22 +254,30 @@
           <a href="#" class="pagination-link">
             ...
           </a>
-        </li><li class="pagination-item">
+        </li>
+        <li class="pagination-item">
           <a href="#" class="pagination-link">
             10
           </a>
         </li>
       </ul>
-      <p>
-        Гостиниц на странице:
-      </p>
-      <table>
-        <tr>
-          <th>
-            4
-          </th>
-        </tr>
-      </table>
+
+      <div class="hotels-per-page">
+        <label>
+          Гостиниц на странице:
+        </label>
+      <select class="select-quantity" name="hotels-page" aria-label="Гостиниц на странице">
+        <option value="four">
+          4
+        </option>
+        <option value="six" checked>
+          6
+        </option>
+        <option value="eight">
+          8
+        </option>
+      </select>
+      </div>
     </section>
     <section class="subscribe">
       <h2 class="visually-hidden">
