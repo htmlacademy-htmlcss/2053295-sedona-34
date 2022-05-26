@@ -66,7 +66,6 @@
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
       </p>
       </div>
-
     </section>
     <section class="five-reasons">
       <h2 class="visually-hidden">
@@ -219,50 +218,50 @@
           <label>
             Дата заезда:<input type="date" name="arrival-date">
           </label>
-          <p>
+          <span class="error-data">
             Мы не можем отправить вас в прошлое.
-          </p>
+          </span>
           <label>
             Дата выезда:<input type="date" name="departure-date">
           </label>
         </fieldset>
-        <p>
+        <span class="free-rooms">
           На эти даты есть свободные номера. Пока есть.
-        </p>
+        </span>
         <fieldset>
           <legend class="visually-hidden">
             Количество постояльцев
           </legend>
-          <span>Взрослые:</span>
-          <button type="button">
-            -
+          <label for="adults">Взрослые:</label>
+          <button type="button adults-previous-button">
+            <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
           </button>
-          <input type="text" name="number-adults">
-          <button type="button">
-            +
+          <input type="text" name="number-adults" id="adults">
+          <button type="button adults-next-button">
+            <span class="visually-hidden">Увеличить количество взрослых на 1</span>
           </button>
-          <span>Дети:</span>
+          <label for="kids">Дети:</label>
           <span>i</span>
-          <button type="button">
-            -
+          <button type="button kids-previous-button">
+            <span class="visually-hidden">Уменьшить количество детей на 1</span>
           </button>
-          <input type="text" name="number-children">
-          <button type="button">
-            +
+          <input type="text" name="number-kids" id="kids">
+          <button type="button kids-next-button">
+            <span class="visually-hidden">Увеличить количество детей на 1</span>
           </button>
         </fieldset>
         <button type="submit">
           Найти
         </button>
       </form>
-      <section class="hover-modal">
+      <div class="tooltip-kids-info">
         <h3>
           Условия размещения детей
         </h3>
         <p>
           Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
         </p>
-      </section>
+      </div>
     </section>
   </div>
 </body>
