@@ -42,6 +42,7 @@
             <span class="visually-hidden">
               Избранное
             </span>
+            <span class="favorites">12</span>
           </a>
         </li>
         <li class="navigation-item">
@@ -58,11 +59,19 @@
         Гостиницы Седоны
       </h1>
     </header>
-    <p>
-      <!--Не понял что здесь должно быть и написал параграф-->
-      гостиницы
-    </p>
-    <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="price.value=range.value">
+    <ul class="breadcrumbs-list">
+      <li class="breadcrumbs-item">
+        <a href="catalog.html" class="breadcrumbs-link">
+          <img src="#" alt="Главная страница">
+        </a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link">
+          гостиницы
+        </a>
+      </li>
+    </ul>
+    <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="maxprice.value=range.value">
       <fieldset>
         <legend>
           Инфраструктура:
@@ -80,7 +89,7 @@
           </li>
           <li>
             <label>
-              <input type="checkbox" name="wi-fi" value="wi-fi"> wi-fi
+              <input type="checkbox" name="wi-fi" value="wi-fi"> Wi-Fi
             </label>
           </li>
         </ul>
@@ -109,20 +118,18 @@
       </fieldset>
       <fieldset>
         <legend>
-          Стоимость, ₽: <output name="price"></output>
+          Стоимость, ₽:
         </legend>
-        <table class="price-range">
-          <tr>
-            <td>
-              <span>0</span>
-              <span>от</span>
-            </td>
-            <td>
-              <span>9000</span>
-              <span>до</span>
-            </td>
-          </tr>
-        </table>
+        <div class="price-choice">
+          <label>
+            <output name="minprice">0</output>от
+          </label>
+        </div>
+        <div class="price-choice">
+          <label>
+            <output name="maxprice">9000</output>до
+          </label>
+        </div>
         <input type="range" name="range" min="0" max="9000" step="1">
       </fieldset>
       <button type="submit">
@@ -137,7 +144,7 @@
         Результат поиска
       </h2>
       <p>
-        Найдено гостиниц: <span>38</span>
+        Найдено гостиниц: <span class="hotels-found">38</span>
       </p>
       <select class="select-control" name="sorting" aria-label="Сортировка">
         <option value="cheap">
@@ -178,7 +185,7 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <button class="button-favorites">
+          <button class="button">
             в избранное
           </button>
           <p>Рейтинг: <span>8,5</span></p>
@@ -193,8 +200,8 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <button class="button-favorites">
-            в избранное
+          <button class="button button-favorites">
+            в избранном
           </button>
           <p>Рейтинг: <span>9,2</span></p>
         </li>
@@ -208,7 +215,7 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <button class="button-favorites">
+          <button class="button">
             в избранное
           </button>
           <p>Рейтинг: <span>6,9</span></p>
@@ -223,7 +230,7 @@
           <a href="#" class="button">
             подробнее
           </a>
-          <button class="button-favorites">
+          <button class="button">
             в избранное
           </button>
           <p>Рейтинг: <span>5,0</span></p>
