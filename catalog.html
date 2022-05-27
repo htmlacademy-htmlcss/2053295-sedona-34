@@ -62,7 +62,7 @@
     <ul class="breadcrumbs-list">
       <li class="breadcrumbs-item">
         <a href="catalog.html" class="breadcrumbs-link">
-          <img src="#" alt="Главная страница">
+          <span class="visually-hidden">Главная страница</span>
         </a>
       </li>
       <li class="breadcrumbs-item">
@@ -122,12 +122,12 @@
         </legend>
         <div class="price-choice">
           <label>
-            <output name="minprice">0</output>от
+            <input type="number" value="0">от
           </label>
         </div>
         <div class="price-choice">
           <label>
-            <output name="maxprice">9000</output>до
+            <input type="number" value="9000">до
           </label>
         </div>
         <input type="range" name="range" min="0" max="9000" step="1">
@@ -286,12 +286,9 @@
       </div>
     </section>
     <section class="subscribe">
-      <h2 class="visually-hidden">
-        подписка на рассылку
-      </h2>
-      <p>
+      <h2>
         Подпишитесь на рассылку
-      </p>
+      </h2>
       <p>
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
