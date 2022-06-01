@@ -30,14 +30,14 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-icons navigation-search">
             <span class="visually-hidden">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-icons navigation-favorites">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -63,7 +63,7 @@
         <h2>
         Седона — небольшой городок в Аризоне, заслуживающий большего!
       </h2>
-      <p>
+      <p class="subtitle">
         Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
       </p>
       </div>
@@ -157,7 +157,7 @@
       <p>
         Заинтересовались?
       </p>
-      <p>
+      <p class="subtitle">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
       <a href="#" class="button">
@@ -168,7 +168,7 @@
       <h2>
         Подписка на рассылку
       </h2>
-      <p>
+      <p class="subtitle subtitle-light">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
@@ -216,13 +216,13 @@
           <legend class="visually-hidden">
             Даты посещения
           </legend>
-          <label>
+          <label class="modal-label">
             Дата заезда:<input type="date" name="arrival-date">
           </label>
           <span class="error-data">
             Мы не можем отправить вас в прошлое.
           </span>
-          <label>
+          <label class="modal-label">
             Дата выезда:<input type="date" name="departure-date">
           </label>
         </fieldset>
@@ -233,7 +233,7 @@
           <legend class="visually-hidden">
             Количество постояльцев
           </legend>
-          <label for="adults">Взрослые:</label>
+          <label for="adults" class="modal-label">Взрослые:</label>
           <button type="button" class="button adults-previous-button">
             <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
           </button>
@@ -241,7 +241,7 @@
           <button type="button" class="button adults-next-button">
             <span class="visually-hidden">Увеличить количество взрослых на 1</span>
           </button>
-          <label for="kids">Дети:</label>
+          <label for="kids" class="modal-label">Дети:</label>
           <span>i</span>
           <button type="button" class="button kids-previous-button">
             <span class="visually-hidden">Уменьшить количество детей на 1</span>
@@ -251,7 +251,7 @@
             <span class="visually-hidden">Увеличить количество детей на 1</span>
           </button>
         </fieldset>
-        <button type="submit" class="button">
+        <button type="submit" class="button button-blue">
           Найти
         </button>
       </form>

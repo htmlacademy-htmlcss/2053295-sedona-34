@@ -21,10 +21,149 @@ body {
   color: #333333;
   font-weight: 400;
 }
+
+body button {
+  border: none;
+}
+
+
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
 .welcome-banner {
   background-color: #300c1c;
   background-image: url("../images/pictures/index-background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  text-decoration: none;
+}
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
+}
+.navigation-icons {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.navigation-search {
+  background-image: url("../images/icons/search.svg");
+}
+.navigation-favorites {
+  background-image: url("../images/icons/favorite.svg");
+}
+.button {
+  display: inline-block;
+  padding: 9px 15px 8px 15px;
+  background-color: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-blue {
+  background-color: #83B3D3;
+  border-radius: 10px
+}
+
+.button-to-favorites {
+  background-color: #82B3D3;
+}
+
+.button-favorites {
+  background-color: #7DB54F;
+}
+
+.subtitle {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subtitle-light {
+  color: #FFFFFF;
+}
+
+.contact-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.modal-label {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+}
+
+
+.error-data {
+  font-size: 16px;
+  color: #FF5757;
+}
+
+.free-rooms {
+  font-size: 16px;
+}
+.booking-card-title {
+
+}
+.rating {
+  font-size: 16px;
+line-height: 20px;
+text-transform: uppercase;
+}
+.grid-item:first-child, .grid-item:nth-child(7) {
+  background-color: #82B3D3;
+}
+.grid-item:nth-child(3), .grid-item:nth-child(5), .grid-item:nth-child(8),.grid-item:nth-child(10){
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.grid-item:nth-child(9) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.subscribe {
+  background-color: #300c1c;
+  background-image: url("../images/pictures/background1.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+
+
 
