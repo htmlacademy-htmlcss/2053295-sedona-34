@@ -194,4 +194,33 @@ text-transform: uppercase;
   background-size: contain;
   background-repeat: no-repeat;
 }
-
+.button-view-selection {
+  display: inline-block;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+}
+.button-view-current {
+  border: 2px solid #000000;
+}
+.button-view-list {
+background-image: url("../images/icons/list-view.svg");
+}
+.button-view-slideshow {
+background-image: url("../images/icons/slideshow-view.svg");
+}
+.button-view-table {
+background-image: url("../images/icons/table-view.svg");
+}
+.network-link {
+  background-repeat: no-repeat;
+}
+.network-link-vk {
+background-image: url("../images/icons/vk.svg");
+}
+.network-link-telegram {
+background-image: url("../images/icons/telegram.svg");
+}
+.network-link-youtube {
+background-image: url("../images/icons/youtube.svg");
+}
