@@ -50,7 +50,9 @@ h4 {
   text-transform: uppercase;
   color: #000000;
 }
-
+.visually-hidden {
+  visibility: hidden;
+}
 .welcome-banner {
   background-color: #300c1c;
   background-image: url("../images/pictures/index-background.jpg");
@@ -109,7 +111,14 @@ h4 {
   font-size: 22px;
   line-height: 26px;
 }
-
+.favorites {
+  border-radius: 10px;
+  background-color: #7DB54F;
+  font-size: 10px;
+line-height: 13px;
+letter-spacing: -0.1em;
+color: #FFFFFF;
+}
 .subtitle-light {
   color: #FFFFFF;
 }
@@ -160,10 +169,25 @@ text-transform: uppercase;
 .subscribe {
   background-color: #300c1c;
   background-image: url("../images/pictures/background1.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
 }
+.search-form {
+  background-color: #300c1c;
+  background-image: url("../images/pictures/background2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #FFFFFF;
+}
 
+.breadcrumbs-link {
+  color: #FFFFFF;
+  text-decoration: none;
 
-
+}
+.title-page-link {
+  background-image: url("../images/icons/housing.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 

@@ -32,14 +32,14 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-icons navigation-search">
             <span class="visually-hidden">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-icons navigation-favorites">
             <span class="visually-hidden">
               Избранное
             </span>
@@ -55,91 +55,96 @@
     </nav>
   </header>
   <main class="main-inner">
-    <header class="inner-header">
-      <h1>
-        Гостиницы Седоны
-      </h1>
-    </header>
-    <ul class="breadcrumbs-list">
-      <li class="breadcrumbs-item">
-        <a href="catalog.html" class="breadcrumbs-link">
-          <span class="visually-hidden">Главная страница</span>
-        </a>
-      </li>
-      <li class="breadcrumbs-item">
-        <a class="breadcrumbs-link">
-          гостиницы
-        </a>
-      </li>
-    </ul>
-    <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="maxprice.value=range.value">
-      <fieldset>
-        <legend>
-          Инфраструктура:
-        </legend>
-        <ul>
-          <li>
+    <section class="search-form">
+      <h2 class="visually-hidden">
+        Выбор гостиниц в Седоне
+      </h2>
+      <header class="inner-header">
+        <h1>
+          Гостиницы Седоны
+        </h1>
+      </header>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a href="catalog.html" class="breadcrumbs-link title-page-link">
+            <span class="visually-hidden">Главная страница</span>
+          </a>
+        </li>
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link">
+            гостиницы
+          </a>
+        </li>
+      </ul>
+      <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="maxprice.value=range.value">
+        <fieldset>
+          <legend>
+            Инфраструктура:
+          </legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="pool" value="Бассейн" checked> Бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="parking" value="Парковка" checked> Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="wi-fi" value="wi-fi"> Wi-Fi
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Тип жилья:
+          </legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="housing" value="Гостиница" checked> Гостиница
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="housing" value="Мотель"> Мотель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="housing" value="Апартаменты"> Апартаменты
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Стоимость, ₽:
+          </legend>
+          <div class="price-choice">
             <label>
-              <input type="checkbox" name="pool" value="Бассейн" checked> Бассейн
+              <input type="number" value="0">от
             </label>
-          </li>
-          <li>
+          </div>
+          <div class="price-choice">
             <label>
-              <input type="checkbox" name="parking" value="Парковка" checked> Парковка
+              <input type="number" value="9000">до
             </label>
-          </li>
-          <li>
-            <label>
-              <input type="checkbox" name="wi-fi" value="wi-fi"> Wi-Fi
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>
-          Тип жилья:
-        </legend>
-        <ul>
-          <li>
-            <label>
-              <input type="radio" name="housing" value="Гостиница" checked> Гостиница
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="radio" name="housing" value="Мотель"> Мотель
-            </label>
-          </li>
-          <li>
-            <label>
-              <input type="radio" name="housing" value="Апартаменты"> Апартаменты
-            </label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset>
-        <legend>
-          Стоимость, ₽:
-        </legend>
-        <div class="price-choice">
-          <label>
-            <input type="number" value="0">от
-          </label>
-        </div>
-        <div class="price-choice">
-          <label>
-            <input type="number" value="9000">до
-          </label>
-        </div>
-        <input type="range" name="range" min="0" max="9000" step="1">
-      </fieldset>
-      <button type="submit">
-        Применить
-      </button>
-      <button type="reset">
-        Сбросить
-      </button>
-    </form>
+          </div>
+          <input type="range" name="range" min="0" max="9000" step="1">
+        </fieldset>
+        <button type="submit">
+          Применить
+        </button>
+        <button type="reset">
+          Сбросить
+        </button>
+      </form>
+    </section>
     <section class="search-results">
       <h2 class="visually-hidden">
         Результат поиска
