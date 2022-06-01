@@ -137,8 +137,23 @@ color: #FFFFFF;
   line-height: 26px;
   color: #000000;
 }
+.modal-input {
+  font-size: 18px;
+line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;
+border-radius: 4px;
+border: none;
+}
+.button-modal {
 
+}
+.modal-kids {
 
+  border-radius: 4px;
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
 .error-data {
   font-size: 16px;
   color: #FF5757;

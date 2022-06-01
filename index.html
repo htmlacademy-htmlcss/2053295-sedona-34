@@ -218,13 +218,13 @@
             Даты посещения
           </legend>
           <label class="modal-label">
-            Дата заезда:<input type="date" name="arrival-date">
+            Дата заезда:<input type="date" name="arrival-date" class="modal-input">
           </label>
           <span class="error-data">
             Мы не можем отправить вас в прошлое.
           </span>
           <label class="modal-label">
-            Дата выезда:<input type="date" name="departure-date">
+            Дата выезда:<input type="date" name="departure-date" class="modal-input">
           </label>
         </fieldset>
         <span class="free-rooms">
@@ -235,20 +235,20 @@
             Количество постояльцев
           </legend>
           <label for="adults" class="modal-label">Взрослые:</label>
-          <button type="button" class="button adults-previous-button">
+          <button type="button" class="button-modal adults-previous-button">
             <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
           </button>
-          <input type="number" name="number-adults" id="adults">
-          <button type="button" class="button adults-next-button">
+          <input type="number" name="number-adults" id="adults" class="modal-input">
+          <button type="button" class="button-modal adults-next-button">
             <span class="visually-hidden">Увеличить количество взрослых на 1</span>
           </button>
           <label for="kids" class="modal-label">Дети:</label>
-          <span>i</span>
-          <button type="button" class="button kids-previous-button">
+          <span class="modal-kids">i</span>
+          <button type="button" class="button-modal kids-previous-button">
             <span class="visually-hidden">Уменьшить количество детей на 1</span>
           </button>
-          <input type="number" name="number-kids" id="kids">
-          <button type="button" class="button kids-next-button">
+          <input type="number" name="number-kids" id="kids" class="modal-input" class="modal-input">
+          <button type="button" class="button-modal kids-next-button">
             <span class="visually-hidden">Увеличить количество детей на 1</span>
           </button>
         </fieldset>
