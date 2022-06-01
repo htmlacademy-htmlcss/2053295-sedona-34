@@ -179,7 +179,11 @@ text-transform: uppercase;
   background-repeat: no-repeat;
   color: #FFFFFF;
 }
+.breadcrumbs-item:not(:last-child)::after {
 
+  content: url("../images/icons/arrow.svg");
+  color: #FFFFFF;
+}
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
