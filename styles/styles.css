@@ -21,12 +21,14 @@ body {
   color: #333333;
   font-weight: 400;
 }
+
 .inner-header h1 {
   font-weight: 700;
-font-size: 60px;
-line-height: 78px;
-color: #FFFFFF;
+  font-size: 60px;
+  line-height: 78px;
+  color: #FFFFFF;
 }
+
 .welcome-heading h2 {
   font-weight: 700;
   font-size: 30px;
@@ -34,6 +36,7 @@ color: #FFFFFF;
   text-transform: uppercase;
   color: #000000;
 }
+
 .modal h2 {
   font-weight: 700;
   font-size: 30px;
@@ -41,6 +44,7 @@ color: #FFFFFF;
   text-transform: uppercase;
   color: #000000;
 }
+
 .subscribe h2 {
   font-weight: 700;
   font-size: 30px;
@@ -48,9 +52,11 @@ color: #FFFFFF;
   text-transform: uppercase;
   color: #FFFFFF;
 }
+
 .subscribe-light h2 {
   color: #000000;
 }
+
 .grid-item h3 {
   font-weight: 700;
   font-size: 24px;
@@ -58,6 +64,7 @@ color: #FFFFFF;
   text-transform: uppercase;
   color: #000000;
 }
+
 .booking-card h3 {
   font-weight: 700;
   font-size: 24px;
@@ -65,6 +72,7 @@ color: #FFFFFF;
   text-transform: uppercase;
   color: #000000;
 }
+
 .grid-item h4 {
   font-weight: 700;
   font-size: 24px;
@@ -123,9 +131,22 @@ color: #FFFFFF;
   background-color: #756157;
   border-radius: 4px;
   color: #FFFFFF;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+.search-hotel-button {
+  background-color: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
+  text-decoration: none;
   text-transform: uppercase;
   border: none;
 }
@@ -141,10 +162,17 @@ color: #FFFFFF;
   text-transform: uppercase;
 }
 
-.button-blue {
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
   background-color: #83B3D3;
-  border-radius: 10px
+  border-radius: 10px;
+  border: none;
 }
+
 
 .button-to-favorites {
   background-color: #82B3D3;
@@ -211,7 +239,9 @@ color: #FFFFFF;
   font-size: 16px;
 }
 
-.booking-card-title {}
+.booking-card-price {
+  font-weight: 400;
+}
 
 .rating {
   font-size: 16px;
@@ -224,6 +254,7 @@ color: #FFFFFF;
   background-color: #82B3D3;
   color: #FFFFFF;
 }
+
 .grid-item:first-child h3,
 .grid-item:nth-child(7) h3 {
   color: #FFFFFF;
@@ -246,9 +277,31 @@ color: #FFFFFF;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .subscribe-light {
   background-color: #FFFFFF;
   background-image: none;
+}
+
+.subscribe-button {
+  background: #82B3D3;
+  border-radius: 0px 10px 10px 0px;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  border: none;
+}
+.subscribe-input {
+  font-family: 'PT Sans';
+font-style: normal;
+font-size: 18px;
+line-height: 21px;
+color: #000000;
+border: none;
+background-color: #F2F2F2;
+border-radius:  10px 0px 0px 10px;
 }
 .search-form {
   background-color: #300c1c;
@@ -259,7 +312,6 @@ color: #FFFFFF;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
-
   content: url("../images/icons/arrow.svg");
   color: #FFFFFF;
 }
@@ -317,7 +369,6 @@ color: #FFFFFF;
 
 .pagination-link {
   background-color: #82B3D3;
-
   border-radius: 4px;
   color: #FFFFFF;
   font-weight: 700;
@@ -330,7 +381,9 @@ color: #FFFFFF;
   color: #000000;
   background-color: #F2F2F2;
 }
-
+.select-quantity {
+  font-size: 18px;
+}
 .large-text {
   font-weight: 700;
   font-size: 30px;
@@ -349,10 +402,12 @@ color: #FFFFFF;
   border-radius: 50%;
   background-image: url("../images/icons/close.svg");
   background-repeat: no-repeat;
+  border: none;
 }
 
 .button-modal {
   background-color: #F2F2F2;
+  border: none;
 }
 
 .previous-button {
