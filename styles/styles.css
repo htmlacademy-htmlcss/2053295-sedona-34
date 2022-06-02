@@ -93,8 +93,17 @@ h4 {
 }
 
 .button {
-  display: inline-block;
-  padding: 9px 15px 8px 15px;
+  background-color: #756157;
+  border-radius: 4px;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.button-link {
+  display: block;
   background-color: #756157;
   border-radius: 4px;
   color: #FFFFFF;
@@ -160,10 +169,7 @@ h4 {
   border: none;
 }
 
-.button-modal {}
-
 .modal-kids {
-
   border-radius: 4px;
   background-color: #83B3D3;
   color: #FFFFFF;
