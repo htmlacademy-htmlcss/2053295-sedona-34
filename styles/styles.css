@@ -24,7 +24,7 @@ body {
 
 .inner-header h1 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 40px;
   line-height: 78px;
   color: #FFFFFF;
 }
@@ -147,6 +147,7 @@ body {
   background-color: #756157;
   border-radius: 4px;
   color: #FFFFFF;
+  font-family: "PT Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -324,7 +325,7 @@ border-radius:  10px 0px 0px 10px;
 .breadcrumbs-link {
   color: #FFFFFF;
   text-decoration: none;
-
+  font-size: 16px;
 }
 
 .title-page-link {
@@ -437,4 +438,9 @@ border-radius:  10px 0px 0px 10px;
   height: 17px;
   background-image: url("../images/icons/star.svg");
   background-size: cover;
+}
+.conditions-housing {
+  font-weight: 700;
+font-size: 20px;
+line-height: 26px;
 }
