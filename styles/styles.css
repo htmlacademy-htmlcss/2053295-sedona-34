@@ -21,21 +21,51 @@ body {
   color: #333333;
   font-weight: 400;
 }
-
-body button {
-  border: none;
+.inner-header h1 {
+  font-weight: 700;
+font-size: 60px;
+line-height: 78px;
+color: #FFFFFF;
 }
-
-
-h2 {
+.welcome-heading h2 {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
 }
-
-h3 {
+.modal h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.subscribe h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.subscribe-light h2 {
+  color: #000000;
+}
+.grid-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.booking-card h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.grid-item h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -43,15 +73,12 @@ h3 {
   color: #000000;
 }
 
-h4 {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  color: #000000;
-}
 
 .heading-light {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   color: #FFFFFF;
 }
 
@@ -100,6 +127,7 @@ h4 {
   line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  border: none;
 }
 
 .button-link {
@@ -213,7 +241,10 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
+.subscribe-light {
+  background-color: #FFFFFF;
+  background-image: none;
+}
 .search-form {
   background-color: #300c1c;
   background-image: url("../images/pictures/background2.jpg");
