@@ -222,6 +222,11 @@ color: #FFFFFF;
 .grid-item:first-child,
 .grid-item:nth-child(7) {
   background-color: #82B3D3;
+  color: #FFFFFF;
+}
+.grid-item:first-child h3,
+.grid-item:nth-child(7) h3 {
+  color: #FFFFFF;
 }
 
 .grid-item:nth-child(3),
