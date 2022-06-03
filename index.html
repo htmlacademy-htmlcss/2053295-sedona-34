@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="styles/styles.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -29,17 +30,18 @@
       </ul>
       <ul class="navigation-list navigation-user">
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-icons navigation-search">
             <span class="visually-hidden">
               Поиск
             </span>
           </a>
         </li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
+          <a href="#" class="navigation-link navigation-icons navigation-favorites">
             <span class="visually-hidden">
               Избранное
             </span>
+            <span class="favorites">12</span>
           </a>
         </li>
         <li class="navigation-item">
@@ -60,11 +62,11 @@
       </div>
       <div class="welcome-heading">
         <h2>
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </h2>
-      <p>
-        Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-      </p>
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </h2>
+        <p class="subtitle">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+        </p>
       </div>
     </section>
     <section class="five-reasons">
@@ -72,7 +74,7 @@
         Пять причин чтобы посетить Седону
       </h2>
       <ul class="grid-list ">
-        <li class="grid-item reasons-box">
+        <li class="grid-item grid-item-blue reasons-box">
           <h3>
             Настоящий городок
           </h3>
@@ -111,7 +113,7 @@
         <li class="grid-item landscape">
           <img src="images/pictures/photo-2.jpg" width="800" height="384" alt="каньон">
         </li>
-        <li class="grid-item reasons-box">
+        <li class="grid-item grid-item-blue reasons-box">
           <h3>
             Там есть мост дьявола
           </h3>
@@ -120,29 +122,29 @@
             Да, по нему можно пройти! Если вы осмелитесь, разумеется
           </p>
         </li>
-        <li class="grid-item reasons-box">
+        <li class="grid-item grid-item-light-grey reasons-box">
           <h3>
             Небольшая площадь
           </h3>
-          <span>— №3 —</span>
+          <span class="dark-number">— №3 —</span>
           <p>
             Все достопримечательности находятся очень близко
           </p>
         </li>
-        <li class="grid-item reasons-box">
+        <li class="grid-item grid-item-grey reasons-box">
           <h3>
             Красивая дорога
           </h3>
-          <span>— №4 —</span>
+          <span class="dark-number">— №4 —</span>
           <p>
             Ехать в Седону из Лас-Вегаса совсем не скучно!
           </p>
         </li>
-        <li class="grid-item reasons-box">
+        <li class="grid-item grid-item-light-grey reasons-box">
           <h3>
             Мало туристов
           </h3>
-          <span>— №5 —</span>
+          <span class="dark-number">— №5 —</span>
           <p>
             Большинство едет в Гранд Каньон и толпится там
           </p>
@@ -153,26 +155,26 @@
       <h2 class="visually-hidden">
         Поиск гостиницы в Седоне
       </h2>
-      <p>
+      <p class="large-text">
         Заинтересовались?
       </p>
-      <p>
+      <p class="subtitle">
         Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
-      <a href="#" class="button">
+      <a href="#" class="search-hotel-button">
         Поиск гостиницы в Седоне
       </a>
     </section>
     <section class="subscribe">
-      <h2>
-        Подписка на рассылку
+      <h2 class="heading-light">
+        Подпишитесь на рассылку
       </h2>
-      <p>
+      <p class="subtitle subtitle-light">
         Только полезная информация и никакого спама, честное бойскаутское!
       </p>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <input type="email" name="email" placeholder="Ваш e-mail">
-        <button type="submit">
+        <input type="email" name="email" placeholder="Ваш e-mail" class="subscribe-input">
+        <button type="submit" class="subscribe-button">
           Подписаться
         </button>
       </form>
@@ -181,13 +183,13 @@
   <footer class="page-footer">
     <ul class="networks-list">
       <li class="networks-item">
-        <a href="https://twitter.com/htmlacademy_ru" class="network-link network-link-twitter">
-          <span class="visually-hidden">Наш Твиттер</span>
+        <a href="https://twitter.com/htmlacademy_ru" class="network-link network-link-vk">
+          <span class="visually-hidden">Наш В контакте</span>
         </a>
       </li>
       <li class="networks-item">
-        <a href="https://www.facebook.com/htmlacademy" class="network-link network-link-facebook">
-          <span class="visually-hidden">Наш фейсбук</span>
+        <a href="https://www.facebook.com/htmlacademy" class="network-link network-link-telegram">
+          <span class="visually-hidden">Наш телеграм</span>
         </a>
       </li>
       <li class="networks-item">
@@ -208,21 +210,21 @@
         Поиск гостиницы в Седоне
       </h2>
       <button class="modal-close-button" type="button">
-        <span>Закрыть</span>
+        <span class="visually-hidden">Закрыть</span>
       </button>
       <form action="https://echo.htmlacademy.ru" class="modal-form" method="post">
         <fieldset>
           <legend class="visually-hidden">
             Даты посещения
           </legend>
-          <label>
-            Дата заезда:<input type="date" name="arrival-date">
+          <label class="modal-label">
+            Дата заезда:<input type="date" name="arrival-date" class="modal-input">
           </label>
           <span class="error-data">
             Мы не можем отправить вас в прошлое.
           </span>
-          <label>
-            Дата выезда:<input type="date" name="departure-date">
+          <label class="modal-label">
+            Дата выезда:<input type="date" name="departure-date" class="modal-input">
           </label>
         </fieldset>
         <span class="free-rooms">
@@ -232,33 +234,33 @@
           <legend class="visually-hidden">
             Количество постояльцев
           </legend>
-          <label for="adults">Взрослые:</label>
-          <button type="button" class="button adults-previous-button">
+          <label for="adults" class="modal-label">Взрослые:</label>
+          <button type="button" class="button-modal previous-button">
             <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
           </button>
-          <input type="number" name="number-adults" id="adults">
-          <button type="button" class="button adults-next-button">
+          <input type="number" name="number-adults" id="adults" class="modal-input">
+          <button type="button" class="button-modal next-button">
             <span class="visually-hidden">Увеличить количество взрослых на 1</span>
           </button>
-          <label for="kids">Дети:</label>
-          <span>i</span>
-          <button type="button" class="button kids-previous-button">
+          <label for="kids" class="modal-label">Дети:</label>
+          <span class="modal-kids">i</span>
+          <button type="button" class="button-modal previous-button">
             <span class="visually-hidden">Уменьшить количество детей на 1</span>
           </button>
-          <input type="number" name="number-kids" id="kids">
-          <button type="button" class="button kids-next-button">
+          <input type="number" name="number-kids" id="kids" class="modal-input" class="modal-input">
+          <button type="button" class="button-modal next-button">
             <span class="visually-hidden">Увеличить количество детей на 1</span>
           </button>
         </fieldset>
-        <button type="submit" class="button">
+        <button type="submit" class="search-button">
           Найти
         </button>
       </form>
       <div class="tooltip-kids-info">
-        <h3>
+        <h3 class="visually-hidden">
           Условия размещения детей
         </h3>
-        <p>
+        <p class="conditions">
           Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
         </p>
       </div>
