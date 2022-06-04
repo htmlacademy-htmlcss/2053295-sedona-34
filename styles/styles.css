@@ -854,3 +854,22 @@ grid-column: span 2;
 .rating {
   margin: 0;
 }
+.choice-management {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 70px;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-start;
+margin: 0;
+padding: 0;
+gap:  8px;
+}
+.pagination-item {
+  width: 60px;
+height: 60px;
+background-color: #82B3D3;
+border-radius: 4px;
+list-style: none;
+}
