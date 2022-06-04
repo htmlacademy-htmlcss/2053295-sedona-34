@@ -145,11 +145,11 @@
             </fieldset>
             <div class="buttons-form">
               <button type="submit" class="apply-button">
-              Применить
-            </button>
-            <button type="reset" class="reset-button">
-              Сбросить
-            </button>
+                Применить
+              </button>
+              <button type="reset" class="reset-button">
+                Сбросить
+              </button>
             </div>
           </div>
         </form>
@@ -158,40 +158,42 @@
         <h2 class="visually-hidden">
           Результат поиска
         </h2>
-        <p class="large-text">
-          Найдено гостиниц: <span class="hotels-found">38</span>
-        </p>
-        <select class="select-control" name="sorting" aria-label="Сортировка">
-          <option value="cheap">
-            Сначала дешёвые
-          </option>
-          <option value="popular">
-            Сначала популярные
-          </option>
-          <option value="expensive">
-            Сначала дорогие
-          </option>
-        </select>
-        <ul class="view-selection-list">
-          <li class="view-selection-item">
-            <a href="#" class="button-view-selection button-view-list button-view-current">
-              <span class="visually-hidden">Показать список</span>
-            </a>
-          </li>
-          <li class="view-selection-item">
-            <a href="#" class="button-view-selection button-view-slideshow">
-              <span class="visually-hidden">Показать слайдер</span>
-            </a>
-          </li>
-          <li class="view-selection-item">
-            <a href="#" class="button-view-selection button-view-table">
-              <span class="visually-hidden">Показать карточки</span>
-            </a>
-          </li>
-        </ul>
+        <div class="search-result-display">
+          <p class="large-text hotels-found">
+            Найдено гостиниц: <span class="hotels-found-number">38</span>
+          </p>
+          <select class="select-control" name="sorting" aria-label="Сортировка">
+            <option value="cheap">
+              Сначала дешёвые
+            </option>
+            <option value="popular">
+              Сначала популярные
+            </option>
+            <option value="expensive">
+              Сначала дорогие
+            </option>
+          </select>
+          <ul class="view-selection-list">
+            <li class="view-selection-item">
+              <a href="#" class="button-view-selection button-view-list button-view-current">
+                <span class="visually-hidden">Показать список</span>
+              </a>
+            </li>
+            <li class="view-selection-item">
+              <a href="#" class="button-view-selection button-view-slideshow">
+                <span class="visually-hidden">Показать слайдер</span>
+              </a>
+            </li>
+            <li class="view-selection-item">
+              <a href="#" class="button-view-selection button-view-table">
+                <span class="visually-hidden">Показать карточки</span>
+              </a>
+            </li>
+          </ul>
+        </div>
         <ul class="booking-cards-list">
           <li class="booking-card">
-            <img src="images/pictures/amara.jpg" width="300" height="211" alt="Вид из гостиницы">
+            <img src="images/pictures/amara.jpg" width="300" height="211" alt="Вид из гостиницы" class="view-hotel">
             <h3>
               Amara Resort & Spa
             </h3>
@@ -212,7 +214,7 @@
             <p class="rating">Рейтинг: <span>8,5</span></p>
           </li>
           <li class="booking-card">
-            <img src="images/pictures/villas.jpg" width="300" height="211" alt="Вид из гостиницы">
+            <img src="images/pictures/villas.jpg" width="300" height="211" alt="Вид из гостиницы" class="view-hotel">
             <h3>
               Villas at Poco Diablo
             </h3>
@@ -233,7 +235,7 @@
             <p class="rating">Рейтинг: <span>9,2</span></p>
           </li>
           <li class="booking-card">
-            <img src="images/pictures/desert.jpg" width="300" height="211" alt="Вид из гостиницы">
+            <img src="images/pictures/desert.jpg" width="300" height="211" alt="Вид из гостиницы" class="view-hotel">
             <h3>
               Desert Quail Inn
             </h3>
@@ -253,7 +255,7 @@
             <p class="rating">Рейтинг: <span>6,9</span></p>
           </li>
           <li class="booking-card">
-            <img src="images/pictures/greentree.jpg" width="300" height="211" alt="Вид из гостиницы">
+            <img src="images/pictures/greentree.jpg" width="300" height="211" alt="Вид из гостиницы" class="view-hotel">
             <h3>
               GreenTree Inn
             </h3>
