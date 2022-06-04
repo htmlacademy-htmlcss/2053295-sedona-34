@@ -30,7 +30,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-
+background-color: #F2F2F2;
   color: #333;
 }
 
@@ -41,6 +41,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  background-color:   #FFFFFF;
 }
 
 .header-container {
@@ -269,6 +270,7 @@ body {
 
 .visually-hidden {
   visibility: hidden;
+  margin: 0;
 }
 
 .welcome-banner {
@@ -277,7 +279,9 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
 }
-
+.navigation-logo {
+  display: inline-block;
+}
 .navigation-link {
   font-size: 20px;
   font-weight: 700;
@@ -541,7 +545,13 @@ body {
 
   color: #fff;
 }
-
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
 .breadcrumbs-link {
   font-size: 16px;
 
@@ -706,4 +716,50 @@ body {
 
 .contact-phone {
   flex-grow: 1;
+}
+
+
+.search-form {
+padding: 35px 70px 70px;
+}
+.inner-header h1 {
+  margin: 0 0 10px 0;
+}
+.catalog {
+  display: flex;
+  justify-content: space-between;
+}
+.choice-form {
+  display: flex;
+  justify-content: flex-start;
+}
+.range-form {
+  display: flex;
+  justify-content: flex-end;
+}
+.buttons-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.feature-selection {
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
+}
+.feature-selection:last-child {
+  margin: 0;
+}
+.feature-selection ul {
+  margin: 0;
+  padding: 0;
+}
+.feature-selection ul li {
+
+  list-style: none;
+}
+.range-area {
+  margin: 0 70px 0 0;
+  padding: 0;
+  border: none;
 }
