@@ -47,6 +47,8 @@ body {
 }
 
 .header-container {
+  position: relative;
+
   display: flex;
   width: 1060px;
   margin: 0 auto;
@@ -54,8 +56,14 @@ body {
   justify-content: space-between;
 }
 
+.logo-wrapper {
+  position: absolute;
+  z-index: 5;
+}
+
 .navigation {
   display: flex;
+  padding: 20px 0 20px 139px;
   flex-grow: 1;
 
   justify-content: space-between;
@@ -321,7 +329,8 @@ body {
 .welcome-banner img {
   padding: 51px 0 82px;
 }
- /*font-family: "PT Sans", sans-serif;
+
+/*font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -333,12 +342,13 @@ body {
   border: none;
   border-radius: 4px;
   background-color: #756157;*/
-  .want-here {
-    text-decoration: none;
-    padding: 9px 15px;
-  }
-.navigation-link {
+.want-here {
+  padding: 9px 15px;
 
+  text-decoration: none;
+}
+
+.navigation-link {
   font-size: 20px;
   line-height: 26px;
 
@@ -350,23 +360,13 @@ body {
 .navigation-link-current {
   border-bottom: 2px solid #756257;
 }
-.navigation-user-item {
 
-}
-
-.navigation-icons {
-
-}
 .navigation-search:before {
   content: url("../images/icons/search.svg");
-
-
 }
 
 .navigation-favorites:before {
   content: url("../images/icons/favorite.svg");
-
-
 }
 
 .button {
@@ -427,16 +427,15 @@ body {
 }
 
 .favorites {
-
   font-size: 10px;
   line-height: 13px;
 
+  text-align: center;
   letter-spacing: -.1em;
 
   color: #fff;
   border-radius: 10px;
   background-color: #7db54f;
-  text-align: center;
 }
 
 .subtitle-light {
