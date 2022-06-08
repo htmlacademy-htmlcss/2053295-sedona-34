@@ -133,15 +133,17 @@
               <legend class="conditions-housing">
                 Стоимость, ₽:
               </legend>
-              <div class="price-choice">
-                <label>
-                  <input type="number" value="0">от
-                </label>
-              </div>
-              <div class="price-choice">
-                <label>
-                  <input type="number" value="9000" id="maxprice">до
-                </label>
+              <div class="price-choice-wrapper">
+                <div class="price-choice">
+                  <label>
+                    <input type="number" value="0" class="price-input"><span class="price-limits">от</span>
+                  </label>
+                </div>
+                <div class="price-choice">
+                  <label>
+                    <input type="number" value="9000" id="maxprice" class="price-input"><span class="price-limits">до</span>
+                  </label>
+                </div>
               </div>
               <input type="range" name="range" min="0" max="9000" step="1">
             </fieldset>
