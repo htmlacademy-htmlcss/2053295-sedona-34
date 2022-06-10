@@ -572,13 +572,16 @@ align-items: center;
 
 .apply-button {
   padding: 14px 15px;
-
+font-size: 16px;
+line-height: 20px;
   background-color: #82b3d3;
 }
 
 .reset-button {
   padding: 14px 15px;
-
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
   background-color: transparent;
 }
 
@@ -631,6 +634,7 @@ align-items: center;
   content: url("../images/icons/arrow.svg");
 
   color: #fff;
+  margin: 0 10px;
 }
 
 .breadcrumbs-list {
@@ -755,7 +759,8 @@ align-items: center;
 
 .select-control {
   font-size: 18px;
-
+  width: 290px;
+padding: 14px 0 14px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
