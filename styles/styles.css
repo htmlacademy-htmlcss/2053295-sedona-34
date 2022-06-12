@@ -74,7 +74,7 @@ body {
   padding: 0;
   margin: 0;
 
-  list-style: none;
+  list-style-type: none;
 
   align-items: center;
 }
@@ -203,7 +203,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  list-style: none;
+  list-style-type: none;
 
   text-align: center;
 
@@ -652,7 +652,7 @@ body {
   padding: 0;
   margin: 0 0 40px;
 
-  list-style: none;
+  list-style-type: none;
 
   justify-content: flex-start;
 }
@@ -710,7 +710,7 @@ body {
   padding: 0;
   margin: 0;
 
-  list-style: none;
+  list-style-type: none;
 
   align-items: center;
   justify-content: flex-start;
@@ -909,7 +909,7 @@ body {
 }
 
 .feature-selection ul li {
-  list-style: none;
+  list-style-type: none;
 }
 
 .range-area {
@@ -946,7 +946,7 @@ body {
 .view-selection-item {
   margin-right: 10px;
 
-  list-style: none;
+  list-style-type: none;
 }
 
 .view-selection-item:last-child {
@@ -967,7 +967,7 @@ body {
   display: grid;
   padding: 20px;
 
-  list-style: none;
+  list-style-type: none;
 
   column-gap: 20px;
   grid-template-columns: repeat(2, 140px);
@@ -1011,7 +1011,7 @@ body {
   display: flex;
   flex-direction: column;
 
-  list-style: none;
+  list-style-type: none;
 
   justify-content: center;
 }
