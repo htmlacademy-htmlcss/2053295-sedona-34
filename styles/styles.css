@@ -98,6 +98,7 @@ body {
 .navigation-user {
   justify-content: end;
 }
+
 .navigation-user-item:nth-last-child(2) {
   margin-right: 20px;
 }
@@ -333,38 +334,45 @@ body {
 .welcome-banner img {
   padding: 51px 0 82px;
 }
+
 .price-choice-wrapper {
   display: flex;
   justify-content: flex-start;
 
 }
+
 .price-choice {
   border: 2px solid #FFFFFF;
-padding: 14px 14px 14px 19px;
-margin-bottom: 20px;
+  padding: 14px 14px 14px 19px;
+  margin-bottom: 20px;
 }
+
 .price-choice:first-child {
   border-right: 1px solid #FFFFFF;
-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
+
 .price-choice:last-child {
   border-left: 1px solid #FFFFFF;
-border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
+
 .price-input {
   background-color: transparent;
   border: none;
   font-family: 'PT Sans';
 
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
   color: #FFFFFF;
   width: 93px;
 }
+
 .price-limits {
   opacity: 0.3;
 }
+
 .want-here {
   padding: 9px 15px;
 
@@ -374,7 +382,7 @@ line-height: 21px;
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
-font-weight: 700;
+  font-weight: 700;
   text-decoration: none;
 
   color: #000;
@@ -391,12 +399,13 @@ font-weight: 700;
 .navigation-favorites:before {
   content: url("../images/icons/favorite.svg");
 }
+
 .navigation-icons {
   position: relative;
-width: 42px;
-height: 100%;
-display: flex;
-justify-content: center;
+  width: 42px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -463,10 +472,10 @@ justify-content: center;
   top: -7px;
   right: -3px;
   width: 20px;
-height: 20px;
-display: flex;
-justify-content: center;
-align-items: center;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 10px;
   line-height: 13px;
 
@@ -573,16 +582,16 @@ align-items: center;
 
 .apply-button {
   padding: 14px 15px;
-font-size: 16px;
-line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #82b3d3;
 }
 
 .reset-button {
   padding: 14px 15px;
-font-weight: 400;
-font-size: 16px;
-line-height: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   background-color: transparent;
 }
 
@@ -740,6 +749,9 @@ line-height: 20px;
 
   border: 2px solid #e5e5e5;
   border-radius: 4px;
+  width: 160px;
+  height: 49px;
+  padding: 14px 20px;
 }
 
 .large-text {
@@ -761,7 +773,7 @@ line-height: 20px;
 .select-control {
   font-size: 18px;
   width: 290px;
-padding: 14px 0 14px 20px;
+  padding: 14px 0 14px 20px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
 }
