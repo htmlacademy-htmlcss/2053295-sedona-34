@@ -62,9 +62,9 @@ body {
 }
 
 .navigation {
-
+  position: relative;
   display: flex;
-  padding: 20px 0 20px 139px;
+  padding-left: 139px;
   flex-grow: 1;
 z-index: 5;
   justify-content: space-between;
@@ -100,6 +100,11 @@ z-index: 5;
 
 .navigation-user {
   justify-content: end;
+}
+.navigation-user-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-user-item:nth-last-child(2) {
@@ -376,9 +381,12 @@ z-index: 5;
   opacity: 0.3;
 }
 
-.want-here {
-  padding: 9px 15px;
-
+.want-here-button {
+  position: relative;
+  display: inline-block;
+  width: 160px;
+  margin: 14px 0;
+  padding: 9px 0;
   text-decoration: none;
 }
 
@@ -478,7 +486,7 @@ z-index: 5;
 
 .favorites {
   position: absolute;
-  top: -7px;
+  top: 14px;
   right: -3px;
   width: 20px;
   height: 20px;
