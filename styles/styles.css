@@ -146,7 +146,7 @@ body {
     margin: 0;
 
     grid-template-columns: repeat(3, 400px);
-    grid-template-rows: repeat(4, minmax(384px, 1fr));
+    grid-template-rows: repeat(4, 384px);
 }
 
 .landscape {
@@ -217,7 +217,7 @@ body {
 }
 
 .grid-item h3 {
-    margin: 90px 0 30px;
+
 }
 
 
@@ -227,6 +227,7 @@ body {
 }
 
 .grid-item-blue h3 {
+  margin: 90px 0 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -237,6 +238,7 @@ body {
 }
 
 .grid-item-grey h3 {
+  margin: 100px 0 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -249,6 +251,7 @@ body {
   background-color: rgba(131, 179, 211, 0.12);
 }
 .grid-item-light-grey h3 {
+  margin: 100px 0 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -273,7 +276,7 @@ body {
 }
 
 .grid-item h4 {
-  margin: 180px 0 30px;
+  margin: 182px 0 30px;
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
@@ -480,7 +483,7 @@ body {
 }
 
 .subtitle {
-    margin: 0 162px 46px;
+    margin: 0 155px 50px;
 
     font-size: 22px;
     line-height: 26px;
@@ -573,6 +576,7 @@ body {
 .grid-item-blue {
     color: #fff;
     background-color: #82b3d3;
+
 }
 
 .grid-item-grey {
@@ -627,6 +631,8 @@ body {
 }
 
 .subscribe-button {
+  display: inline-block;
+  width: 200px;
     padding: 12px 15px;
     margin: 0;
 
@@ -795,7 +801,7 @@ body {
 }
 
 .interested {
-    margin: 91px 0 29px;
+    margin: 90px 0 30px;
 }
 
 .select-control {
