@@ -35,15 +35,15 @@
             </li>
           </ul>
           <ul class="navigation-list navigation-user">
-            <li class="navigation-user-item">
-              <a href="#" class="navigation-link navigation-icons navigation-search">
+            <li class="navigation-user-item navigation-icons">
+              <a href="#" class="navigation-link navigation-search">
                 <span class="visually-hidden">
                   Поиск
                 </span>
               </a>
             </li>
-            <li class="navigation-user-item">
-              <a href="#" class="navigation-link navigation-icons navigation-favorites">
+            <li class="navigation-user-item navigation-icons">
+              <a href="#" class="navigation-link navigation-favorites">
                 <span class="visually-hidden">
                   Избранное
                 </span>
@@ -51,7 +51,7 @@
               </a>
             </li>
             <li class="navigation-user-item">
-              <a href="#" class="button want-here">
+              <a href="#" class="button want-here-button">
                 Хочу сюда!
               </a>
             </li>
@@ -133,15 +133,17 @@
               <legend class="conditions-housing">
                 Стоимость, ₽:
               </legend>
-              <div class="price-choice">
-                <label>
-                  <input type="number" value="0">от
-                </label>
-              </div>
-              <div class="price-choice">
-                <label>
-                  <input type="number" value="9000" id="maxprice">до
-                </label>
+              <div class="price-choice-wrapper">
+                <div class="price-choice">
+                  <label>
+                    <input type="number" value="0" class="price-input"><span class="price-limits">от</span>
+                  </label>
+                </div>
+                <div class="price-choice">
+                  <label>
+                    <input type="number" value="9000" id="maxprice" class="price-input"><span class="price-limits">до</span>
+                  </label>
+                </div>
               </div>
               <input type="range" name="range" min="0" max="9000" step="1">
             </fieldset>
@@ -331,12 +333,12 @@
         <h2>
           Подпишитесь на рассылку
         </h2>
-        <p class="subtitle">
+        <p class="subtitle subtitle-bottom">
           Только полезная информация и никакого спама, честное бойскаутское!
         </p>
         <form action="https://echo.htmlacademy.ru/courses" method="post" class="subscribe-form">
           <input type="email" placeholder="Ваш e-mail" class="subscribe-input">
-          <button type="submit" class="subscribe-button">
+          <button type="submit" class="button subscribe-button">
             Подписаться
           </button>
         </form>
