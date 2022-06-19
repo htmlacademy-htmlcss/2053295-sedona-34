@@ -100,10 +100,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 63px 0 90px;
 }
 
 .welcome-heading .subtitle {
-  margin-bottom: 90px;
+  margin: 0;
 }
 
 .booking {
@@ -111,6 +112,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding: 91px 0 93px;
 }
 
 .inner-header h1 {
@@ -137,7 +139,7 @@ body {
 }
 
 .welcome-heading h2 {
-  margin: 63px 290px 31px;
+  margin: 0 290px 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -155,7 +157,7 @@ body {
 }
 
 .subscribe h2 {
-  margin: 94px 0 29px;
+  margin: 0 0 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -386,7 +388,6 @@ body {
 
 .search-hotel-button {
   padding: 12px 150px;
-  margin-bottom: 93px;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
@@ -507,17 +508,17 @@ body {
 .subscribe {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background-color: #300c1c;
   background-image: url("../images/pictures/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  align-items: center;
-  justify-content: flex-start;
+  padding: 94px 0;
 }
 
 .subscribe-form {
   display: flex;
-  margin: 0 0 94px;
   align-items: center;
   justify-content: center;
 }
@@ -703,7 +704,7 @@ body {
 }
 
 .interested {
-  margin: 91px 0 29px;
+  margin: 0 0 29px;
 }
 
 .select-control {
@@ -880,7 +881,8 @@ body {
 .booking-cards-list {
   display: flex;
   padding: 0;
-  margin: 0 70px 65px 73px;
+  margin: 0 70px 0 73px;
+  padding: 0 0 65px;
   column-gap: 18px;
   flex-wrap: wrap;
   justify-content: flex-start;
