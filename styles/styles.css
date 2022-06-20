@@ -200,7 +200,7 @@ body {
 }
 
 .grid-item-grey h3 {
-  margin: 100px 0 30px;
+  margin: 103px 0 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -213,7 +213,7 @@ body {
 }
 
 .grid-item-light-grey h3 {
-  margin: 100px 0 30px;
+  margin: 103px 0 30px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -334,7 +334,7 @@ body {
   position: relative;
   display: inline-block;
   width: 160px;
-  padding: 9px 0;
+  padding: 9px 0 8px;
   margin: 14px 0 14px 20px;
   text-decoration: none;
 }
@@ -420,7 +420,9 @@ body {
   line-height: 26px;
   text-align: center;
 }
-
+.subtitle-span {
+  margin: 0 0 0 -5px;
+}
 .subtitle-bottom {
   margin: 0 0 46px;
 }
@@ -565,7 +567,7 @@ body {
 .subscribe-input {
   box-sizing: border-box;
   width: 600px;
-  height: 58px;
+  height: 60px;
   padding: 0 22px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -990,4 +992,7 @@ body {
 
 .lowercase {
   text-transform: lowercase;
+}
+.logo-html-academy {
+  margin-top: 3px;
 }
