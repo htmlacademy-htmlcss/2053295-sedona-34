@@ -56,7 +56,7 @@ body {
 
 .navigation {
   position: relative;
-  z-index: 5;
+  z-index: 2;
   display: flex;
   padding-left: 139px;
   flex-grow: 1;
@@ -962,10 +962,6 @@ body {
   margin-bottom: 0;
 }
 
-.overlay {
-  display: none;
-}
-
 .page-footer {
   display: flex;
   padding: 45px 0 35px;
@@ -1219,4 +1215,25 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal {
+  margin: 396px 282px 2358px;
+  padding: 62px 70px 70px;
+}
+.modal-close-button {
+
+  padding: 20px;
+  background-color: #F2F2F2;
+  background-image: url("../images/icons/close.svg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 50%;
 }
