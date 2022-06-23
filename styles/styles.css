@@ -299,13 +299,13 @@ body {
 
 .price-choice:first-child {
   border-right: 1px solid #fff;
-padding: 12px 15px 11px 18px;
+  padding: 12px 15px 11px 18px;
   border-radius: 4px 0 0 4px;
 }
 
 .price-choice:last-child {
   border-left: 1px solid #fff;
-padding: 12px 15px 11px;
+  padding: 12px 15px 11px;
   border-radius: 0 4px 4px 0;
 }
 
@@ -325,9 +325,11 @@ padding: 12px 15px 11px;
 
   opacity: .3;
 }
+
 .price-limits-from {
   padding-left: 3px;
 }
+
 .want-here-button {
   position: relative;
   display: inline-block;
@@ -371,6 +373,7 @@ padding: 12px 15px 11px;
 .navigation-search {
   padding: 4px 0 0 1px;
 }
+
 .navigation-search::before {
   content: url("../images/icons/search.svg");
 }
@@ -378,6 +381,7 @@ padding: 12px 15px 11px;
 .navigation-favorites {
   padding-top: 2px;
 }
+
 .navigation-favorites::before {
   content: url("../images/icons/favorite.svg");
 }
@@ -853,22 +857,18 @@ padding: 12px 15px 11px;
 }
 
 .select-quantity {
-  position: relative;
   width: 160px;
   height: 49px;
-  padding: 13px 0 17px 18px;
+  padding: 12px 0 17px 18px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  appearance: none
+  appearance: none;
+  background-image: url("../images/icons/select-arrow.svg");
+  background-position: calc(100% - 19px) 50%;
+  background-repeat: no-repeat;
 }
-.select-quantity::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-z-index: 10;
-  content: url("./images/icons/close.svg");
-}
+
 .large-text {
   margin: 0;
   font-weight: 700;
@@ -884,12 +884,16 @@ z-index: 10;
 
 .select-control {
   width: 290px;
-  padding: 9px 0 10px 16px;
+  margin-right: 75px;
+  padding: 11px 0 9px 15px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   font-family: inherit;
   appearance: none;
+  background-image: url("../images/icons/select-arrow.svg");
+  background-position: calc(100% - 21px) 50%;
+  background-repeat: no-repeat;
 }
 
 .modal-close-button {
@@ -1036,10 +1040,6 @@ z-index: 10;
   padding-top: 4px;
 }
 
-.select-control {
-  margin-right: 75px;
-}
-
 .view-selection-list {
   display: flex;
   padding: 0;
@@ -1145,6 +1145,7 @@ z-index: 10;
 }
 
 .hotels-per-page {
+  position: relative;
   display: flex;
   align-items: center;
 }
@@ -1201,16 +1202,19 @@ z-index: 10;
 .logo-html-academy:active {
   opacity: 0.3;
 }
+
 .checkbox {
-width: 20px;
-height: 20px;
+  width: 20px;
+  height: 20px;
   margin: 0 20px 0 0;
 }
+
 .radio {
-width: 20px;
-height: 20px;
+  width: 20px;
+  height: 20px;
   margin: 0 20px 0 0;
 }
+
 .options-label {
   display: flex;
   justify-content: flex-start;
