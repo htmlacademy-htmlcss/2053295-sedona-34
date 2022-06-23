@@ -859,7 +859,7 @@ body {
 .select-quantity {
   width: 160px;
   height: 49px;
-  padding: 12px 0 17px 18px;
+  padding: 12px 22px 17px 18px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -885,7 +885,7 @@ body {
 .select-control {
   width: 290px;
   margin-right: 75px;
-  padding: 11px 0 9px 15px;
+  padding: 11px 23px 9px 15px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
