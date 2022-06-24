@@ -149,11 +149,14 @@ body {
 }
 
 .modal h2 {
+  margin: 0 0 63px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000;
+  grid-column-start: 1;
+  grid-column-end: -2;
 }
 
 .subscribe h2 {
@@ -283,7 +286,7 @@ body {
 .price-choice-wrapper {
   display: flex;
   justify-content: flex-start;
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
 }
 
 .price-housing {
@@ -559,13 +562,6 @@ body {
   opacity: 0.3;
 }
 
-.modal-label {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  color: #000;
-}
-
 .modal-input {
   font-size: 18px;
   line-height: 21px;
@@ -579,15 +575,6 @@ body {
   color: #fff;
   border-radius: 4px;
   background-color: #83b3d3;
-}
-
-.error-data {
-  font-size: 16px;
-  color: #ff5757;
-}
-
-.free-rooms {
-  font-size: 16px;
 }
 
 .booking-card-price {
@@ -649,7 +636,7 @@ body {
 }
 
 .reset-button {
-  padding: 12px 15px 2px;
+  padding: 12px 15px 1px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -710,6 +697,7 @@ body {
   background-image: url("../images/pictures/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 35px 70px 70px;
 }
 
 .breadcrumbs-item {
@@ -896,19 +884,6 @@ body {
   background-repeat: no-repeat;
 }
 
-.modal-close-button {
-  border: none;
-  border-radius: 50%;
-  background-color: #f2f2f2;
-  background-image: url("../images/icons/close.svg");
-  background-repeat: no-repeat;
-}
-
-.button-modal {
-  border: none;
-  background-color: #f2f2f2;
-}
-
 .previous-button {
   background-image: url("../images/icons/minus.svg");
   background-repeat: no-repeat;
@@ -968,10 +943,6 @@ body {
   margin: 0 70px;
   align-items: center;
   justify-content: space-between;
-}
-
-.search-form {
-  padding: 35px 70px 69px;
 }
 
 .inner-header h1 {
@@ -1217,23 +1188,144 @@ body {
   align-items: center;
 }
 
+
+
+
 .overlay {
   position: absolute;
   width: 100%;
-  min-height: 100%;
-  background-color: rgba(242, 242, 242, 0.8);
+  height: 100%;
 }
 
 .modal {
-  margin: 396px 282px 2358px;
+  position: absolute;
+  top: 396px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 715px;
   padding: 62px 70px 70px;
-}
-.modal-close-button {
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
 
-  padding: 20px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 54px;
+  right: 70px;
   background-color: #F2F2F2;
-  background-image: url("../images/icons/close.svg");
+  background-image: url("../images/icons/close-button.svg");
   background-position: center;
-  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 26px;
   border-radius: 50%;
+}
+
+.modal-form {}
+
+.visit-dates {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.modal-label {
+  display: grid;
+  grid-template-columns: 155px 1fr;
+  grid-template-rows: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000;
+  text-transform: capitalize;
+  place-items: center start;
+}
+
+.modal-input {
+  justify-self: stretch;
+
+  padding: 15px 19px 14px;
+
+
+}
+
+.arrival-date {}
+
+.error-data {
+  display: block;
+  font-size: 16px;
+  margin-left: 155px;
+  padding-bottom: 11px;
+  color: #FF5757;
+}
+
+.departure-date {}
+
+.free-rooms {
+  display: block;
+  font-size: 16px;
+  margin-left: 155px;
+  padding-bottom: 11px;
+}
+
+.guests-number {}
+
+.button-modal {
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.previous-button {}
+
+.modal-input-short {}
+
+.next-button {}
+
+.modal-kids {}
+
+.search-button {}
+
+.tooltip-kids-info {}
+
+.conditions {}
+
+
+
+
+
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -10px;
+  width: 4px;
+  height: 4px;
+  background: #FFFFFF;
+  border: 8px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 217px;
 }
