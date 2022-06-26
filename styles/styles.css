@@ -637,7 +637,7 @@ body {
 }
 
 .reset-button {
-  padding: 12px 15px 3px;
+  padding: 12px 15px 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -698,7 +698,7 @@ body {
   background-image: url("../images/pictures/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 70px 68px;
+  padding: 35px 70px 67px;
 }
 
 .breadcrumbs-item {
@@ -928,10 +928,6 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
-}
-
-.conditions-housing:last-of-type {
-  margin-bottom: 31px;
 }
 
 .options-item {
@@ -1234,6 +1230,7 @@ body {
   display: inline-block;
   border-radius: 50%;
   margin-right: 20px;
+
   text-align: center;
   width: 20px;
   height: 20px;
