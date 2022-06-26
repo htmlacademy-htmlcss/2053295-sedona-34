@@ -241,25 +241,29 @@
           <legend class="visually-hidden">
             Количество постояльцев
           </legend>
-          <label for="adults" class="modal-label">Взрослые:</label>
-          <button type="button" class="button-modal previous-button">
-            <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
-          </button>
-          <input type="number" name="number-adults" id="adults" class="modal-input modal-input-short">
-          <button type="button" class="button-modal next-button">
-            <span class="visually-hidden">Увеличить количество взрослых на 1</span>
-          </button>
-          <label for="kids" class="modal-label">Дети:</label>
-          <span class="modal-kids">i</span>
-          <button type="button" class="button-modal previous-button">
-            <span class="visually-hidden">Уменьшить количество детей на 1</span>
-          </button>
-          <input type="number" name="number-kids" id="kids" class="modal-input modal-input-short">
-          <button type="button" class="button-modal next-button">
-            <span class="visually-hidden">Увеличить количество детей на 1</span>
-          </button>
+          <label for="adults" class="modal-label modal-label-short">Взрослые:</label>
+          <div class="quantity-selection">
+            <button type="button" class="button-modal previous-button">
+              <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
+            </button>
+            <input type="number" name="number-adults" id="adults" class="modal-input modal-input-short">
+            <button type="button" class="button-modal next-button">
+              <span class="visually-hidden">Увеличить количество взрослых на 1</span>
+            </button>
+          </div>
+          <label for="kids" class="modal-label modal-label-short">Дети:</label>
+          <span class="modal-kids"></span>
+          <div class="quantity-selection">
+            <button type="button" class="button-modal previous-button">
+              <span class="visually-hidden">Уменьшить количество детей на 1</span>
+            </button>
+            <input type="number" name="number-kids" id="kids" class="modal-input modal-input-short">
+            <button type="button" class="button-modal next-button">
+              <span class="visually-hidden">Увеличить количество детей на 1</span>
+            </button>
+          </div>
         </fieldset>
-        <button type="submit" class="search-button">
+        <button type="submit" class="search-button modal-search-button">
           Найти
         </button>
       </form>

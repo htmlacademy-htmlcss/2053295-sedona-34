@@ -150,7 +150,7 @@ body {
 }
 
 .modal h2 {
-  margin: 0 0 63px;
+  margin: 0 0 63px -2px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -563,19 +563,20 @@ body {
   opacity: 0.3;
 }
 
-.modal-input {
-  font-size: 18px;
-  line-height: 21px;
-  color: #000;
-  border: none;
-  border-radius: 4px;
-  background-color: #f2f2f2;
-}
+
 
 .modal-kids {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
   color: #fff;
-  border-radius: 4px;
+  border-radius: 50%;
   background-color: #83b3d3;
+  background-image: url("../images/icons/i.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  align-self: center;
+  margin-left: 5px;
 }
 
 .booking-card-price {
@@ -885,20 +886,12 @@ body {
   background-repeat: no-repeat;
 }
 
-.previous-button {
-  background-image: url("../images/icons/minus.svg");
-  background-repeat: no-repeat;
-}
-
-.next-button {
-  background-image: url("../images/icons/plus.svg");
-  background-repeat: no-repeat;
-}
-
 .conditions {
   font-size: 16px;
   color: #fff;
-  background-color: #000;
+  background-color: #333333;
+  margin: 0;
+  padding: 0 18px 0 22px;
 }
 
 .stars {
@@ -1230,7 +1223,6 @@ body {
   display: inline-block;
   border-radius: 50%;
   margin-right: 20px;
-
   text-align: center;
   width: 20px;
   height: 20px;
@@ -1292,7 +1284,7 @@ body {
 .modal-close-button {
   position: absolute;
   top: 54px;
-  right: 70px;
+  right: 71px;
   background-color: #F2F2F2;
   background-image: url("../images/icons/close-button.svg");
   background-position: center;
@@ -1319,16 +1311,40 @@ body {
   place-items: center start;
 }
 
+.modal-label-short {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+}
+
+.modal-label-short:last-of-type {
+  justify-content: flex-end;
+  margin-left: 37px;
+}
+
 .modal-input {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  background-color: #f2f2f2;
   justify-self: stretch;
-  padding: 15px 19px 14px;
+  padding: 14px 19px 13px;
+}
+
+.modal-input-short {
+  padding: 15px 0 14px 10px;
+  min-width: 22px;
+  text-align: center;
 }
 
 .error-data {
   display: block;
   font-size: 16px;
   margin-left: 155px;
-  padding-bottom: 11px;
+  padding: 8px 0 11px;
   color: #FF5757;
 }
 
@@ -1336,13 +1352,85 @@ body {
   display: block;
   font-size: 16px;
   margin-left: 155px;
-  padding-bottom: 11px;
+  padding: 8px 0 11px;
 }
 
 .button-modal {
   border: none;
   background-color: #f2f2f2;
+  vertical-align: middle;
+  padding: 0 25px;
 }
+
+.previous-button {
+  background-image: url("../images/icons/minus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 14px 0 0 14px;
+}
+
+.next-button {
+  background-image: url("../images/icons/plus.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0 4px 4px 0;
+}
+
+.guests-number {
+  margin: 0 0 40px 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 155px 133px auto auto 133px;
+  border: none;
+}
+
+.quantity-selection {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F2F2F2;
+  border-radius: 4px;
+}
+
+.modal-search-button {
+  width: 100%;
+  min-height: 60px;
+  padding: 0;
+  border: none;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.tooltip-kids-info {
+  position: absolute;
+  top: 401px;
+  left: 353px;
+  width: 256px;
+  min-height: 143px;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tooltip-kids-info::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%) rotateZ(180deg);
+  border: 10px solid transparent;
+  border-top: 10px solid #333333;
+}
+
+
+
+
+
 
 /*Ползунки*/
 .range-controls {
