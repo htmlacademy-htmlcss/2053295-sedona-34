@@ -58,7 +58,7 @@ body {
   position: relative;
   z-index: 2;
   display: flex;
-  padding-left: 139px;
+  padding-left: 138px;
   flex-grow: 1;
   justify-content: space-between;
 }
@@ -286,7 +286,7 @@ body {
 .price-choice-wrapper {
   display: flex;
   justify-content: flex-start;
-  margin: 0 0 30px 0;
+  margin: 0 0 29px 0;
 }
 
 .price-housing {
@@ -929,11 +929,11 @@ body {
   text-transform: capitalize;
 }
 
-.feature-selection ul li {
+.options-item {
   margin-bottom: 15px;
 }
 
-.feature-selection ul li:last-child {
+.options-item:last-child {
   margin-bottom: 0;
 }
 
@@ -972,7 +972,7 @@ body {
 
 .feature-selection {
   padding: 0;
-  margin: 0 70px 0 0;
+  margin: 0 72px 0 0;
   border: none;
 }
 
@@ -1171,10 +1171,53 @@ body {
 }
 
 .checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  color: #FFFFFF;
+  cursor: default;
+}
+
+.checkbox-label:before {
+  content: " ";
+  display: inline-block;
+  margin-right: 20px;
+margin-bottom: 1px;
+  color: #3F5E72;
+  text-align: center;
+  vertical-align: bottom;
   width: 20px;
   height: 20px;
-  margin: 0 20px 0 0;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  line-height: 21px
 }
+
+#pool:checked+.checkbox-label:before {
+  content: url("../images/icons/check-mark.svg");
+}
+
+#parking:checked+.checkbox-label:before {
+  content: url("../images/icons/check-mark.svg");
+}
+
+#wifi:checked+.checkbox-label:before {
+  content: url("../images/icons/check-mark.svg");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .radio {
   width: 20px;
@@ -1289,7 +1332,7 @@ body {
 
 .tooltip-kids-info {}
 
-.conditions {}
+
 
 
 

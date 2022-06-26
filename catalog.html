@@ -81,7 +81,7 @@
             </a>
           </li>
         </ul>
-        <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="maxprice.value=range.value">
+        <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="choice-form">
             <fieldset class="feature-selection">
               <legend class="conditions-housing">
@@ -89,19 +89,16 @@
               </legend>
               <ul class="options-list">
                 <li class="options-item">
-                  <label class="options-label">
-                    <input type="checkbox" name="pool" value="Бассейн" class="checkbox" checked> Бассейн
-                  </label>
+                  <input type="checkbox" id="pool" name="pool" value="Бассейн" class="checkbox" checked>
+                  <label for="pool" class="checkbox-label">Бассейн</label>
                 </li>
                 <li class="options-item">
-                  <label class="options-label">
-                    <input type="checkbox" name="parking" value="Парковка" class="checkbox" checked> Парковка
-                  </label>
+                  <input type="checkbox" id="parking" name="parking" value="Парковка" class="checkbox" checked>
+                  <label for="parking" class="checkbox-label">Парковка</label>
                 </li>
                 <li class="options-item">
-                  <label class="options-label">
-                    <input type="checkbox" name="wi-fi" value="wi-fi" class="checkbox"> Wi-Fi
-                  </label>
+                  <input type="checkbox" id="wifi" name="wi-fi" value="wi-fi" class="checkbox">
+                  <label for="wifi" class="checkbox-label">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
