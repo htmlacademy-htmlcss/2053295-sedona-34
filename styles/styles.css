@@ -289,7 +289,7 @@ body {
 .price-choice-wrapper {
   display: flex;
   justify-content: flex-start;
-  margin: 0 0 29px 0;
+  margin: 0 0 30px 0;
 }
 
 .price-housing {
@@ -866,7 +866,7 @@ margin-left: -16px;
 .select-quantity {
   width: 160px;
   height: 49px;
-  padding: 12px 22px 17px 18px;
+  padding: 13px 22px 16px 18px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
@@ -1046,7 +1046,7 @@ margin-left: -16px;
   display: flex;
   padding: 0;
   margin: 0 70px 0 73px;
-  padding: 0 0 65px;
+  padding: 0 0 66px;
   column-gap: 18px;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -1076,7 +1076,7 @@ margin-left: -16px;
 
 .choice-management {
   display: flex;
-  padding: 30px 0 25px;
+  padding: 29px 0 25px;
   margin: 0 70px;
   border-top: 1px solid #e6e6e6;
   justify-content: space-between;
@@ -1135,10 +1135,12 @@ margin-left: -16px;
   position: relative;
   display: flex;
   align-items: center;
+
 }
 
 .hotels-per-page label {
   margin-right: 52px;
+  padding-top: 1px;
 }
 
 .reasons-box {
