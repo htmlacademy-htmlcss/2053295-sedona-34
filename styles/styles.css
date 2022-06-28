@@ -114,6 +114,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  margin-left: 3px;
   padding: 90px 0 93px;
 }
 
@@ -196,7 +197,7 @@ body {
 }
 
 .grid-item-blue h3 {
-  margin: 93px 0 30px;
+  margin: 92px 0 29px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -206,7 +207,7 @@ body {
 
 .grid-item-grey h3,
 .grid-item-light-grey h3 {
-  margin: 103px 0 30px;
+  margin: 103px 0 29px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -415,7 +416,7 @@ body {
 }
 
 .search-hotel-button {
-  padding: 12px 150px;
+  padding: 12px 149px;
   font-size: 20px;
   line-height: 36px;
   text-decoration: none;
@@ -516,10 +517,6 @@ body {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
-}
-
-.subtitle-span {
-  margin: 0 0 0 -16px;
 }
 
 .subtitle-bottom {
@@ -946,7 +943,7 @@ body {
 }
 
 .housing-item {
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 }
 
 .housing-item:last-child {
@@ -1239,6 +1236,7 @@ body {
   display: inline-block;
   border-radius: 50%;
   margin-right: 20px;
+  margin-bottom: 4px;
   text-align: center;
   width: 20px;
   height: 20px;
@@ -1277,6 +1275,7 @@ body {
 
 /*Модальное окно*/
 .overlay {
+  display: none;
   position: absolute;
   width: 100%;
   height: 100%;
