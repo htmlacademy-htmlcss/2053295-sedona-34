@@ -231,7 +231,7 @@ body {
 }
 
 .grid-item h4 {
-  margin: 184px 0 30px;
+  margin: 184px 0 29px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -416,6 +416,7 @@ body {
 }
 
 .search-hotel-button {
+  margin-left: -2px;
   padding: 12px 149px;
   font-size: 20px;
   line-height: 36px;
@@ -513,10 +514,15 @@ body {
 }
 
 .subtitle {
-  margin: 0 0 56px;
+  margin: 0 57px 56px 55px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.subtitle-span {
+  display: block;
+margin-left: -16px;
 }
 
 .subtitle-bottom {
