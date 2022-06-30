@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/styles.css">
+  <link type="image/x-icon" href="images/icons/favicon.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="images/icons/favicon.ico" rel="icon">
   <title>HTML Academy: Каталог</title>
 </head>
 
@@ -81,27 +83,24 @@
             </a>
           </li>
         </ul>
-        <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post" oninput="maxprice.value=range.value">
+        <form class="catalog" action="https://echo.htmlacademy.ru/courses" method="post">
           <div class="choice-form">
             <fieldset class="feature-selection">
               <legend class="conditions-housing">
                 Инфраструктура:
               </legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="checkbox" name="pool" value="Бассейн" checked> Бассейн
-                  </label>
+              <ul class="options-list">
+                <li class="options-item">
+                  <input type="checkbox" id="pool" name="pool" value="Бассейн" class="checkbox" checked>
+                  <label for="pool" class="checkbox-label">Бассейн</label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="parking" value="Парковка" checked> Парковка
-                  </label>
+                <li class="options-item">
+                  <input type="checkbox" id="parking" name="parking" value="Парковка" class="checkbox" checked>
+                  <label for="parking" class="checkbox-label">Парковка</label>
                 </li>
-                <li>
-                  <label>
-                    <input type="checkbox" name="wi-fi" value="wi-fi"> Wi-Fi
-                  </label>
+                <li class="options-item">
+                  <input type="checkbox" id="wifi" name="wi-fi" value="wi-fi" class="checkbox">
+                  <label for="wifi" class="checkbox-label">Wi-Fi</label>
                 </li>
               </ul>
             </fieldset>
@@ -109,21 +108,18 @@
               <legend class="conditions-housing">
                 Тип жилья:
               </legend>
-              <ul>
-                <li>
-                  <label>
-                    <input type="radio" name="housing" value="Гостиница" checked> Гостиница
-                  </label>
+              <ul class="housing-list">
+                <li class="housing-item">
+                  <input type="radio" id="radiohotel" name="housing" value="Гостиница" class="radio">
+                  <label for="radiohotel" class="options-label">Гостиница</label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="housing" value="Мотель"> Мотель
-                  </label>
+                <li class="housing-item">
+                  <input type="radio" id="radiomotel" name="housing" value="Мотель" class="radio" checked>
+                  <label for="radiomotel" class="options-label">Мотель</label>
                 </li>
-                <li>
-                  <label>
-                    <input type="radio" name="housing" value="Апартаменты"> Апартаменты
-                  </label>
+                <li class="housing-item">
+                  <input type="radio" id="radioaparts" name="housing" value="Апартаменты" class="radio">
+                  <label for="radioaparts" class="options-label">Апартаменты</label>
                 </li>
               </ul>
             </fieldset>
@@ -136,7 +132,7 @@
               <div class="price-choice-wrapper">
                 <div class="price-choice">
                   <label>
-                    <input type="number" value="0" class="price-input"><span class="price-limits">от</span>
+                    <input type="number" value="0" class="price-input"><span class="price-limits price-limits-from">от</span>
                   </label>
                 </div>
                 <div class="price-choice">
@@ -145,7 +141,13 @@
                   </label>
                 </div>
               </div>
-              <input type="range" name="range" min="0" max="9000" step="1">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="range-toggle range-toggle-min"></div>
+                <div class="range-toggle range-toggle-max"></div>
+              </div>
             </fieldset>
             <div class="buttons-form">
               <button type="submit" class="button apply-button">

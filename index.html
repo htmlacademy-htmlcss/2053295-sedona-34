@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/styles.css">
+  <link type="image/x-icon" href="images/icons/favicon.ico" rel="shortcut icon">
+  <link type="Image/x-icon" href="images/icons/favicon.ico" rel="icon">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -164,7 +166,8 @@
           Заинтересовались?
         </p>
         <p class="subtitle">
-          Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне
+          Укажите предполагаемые даты поездки,<br>
+          <span class="subtitle-span">и мы покажем вам лучшие предложения гостиниц в Седоне</span>
         </p>
         <a href="#" class="button search-hotel-button">
           Поиск гостиницы в Седоне
@@ -208,69 +211,73 @@
         <img src="images/logo/html-academy.svg" width="115" height="33" alt="Логотип html academy">
       </a>
     </footer>
-    <!--Модальное окно-->
-    <div class="overlay">
-      <section class="modal">
-        <h2>
-          Поиск гостиницы в Седоне
-        </h2>
-        <button class="modal-close-button" type="button">
-          <span class="visually-hidden">Закрыть окно</span>
-        </button>
-        <form action="https://echo.htmlacademy.ru" class="modal-form" method="post">
-          <fieldset>
-            <legend class="visually-hidden">
-              Даты посещения
-            </legend>
-            <label class="modal-label">
-              Дата заезда:<input type="date" name="arrival-date" class="modal-input">
-            </label>
-            <span class="error-data">
-              Мы не можем отправить вас в прошлое.
-            </span>
-            <label class="modal-label">
-              Дата выезда:<input type="date" name="departure-date" class="modal-input">
-            </label>
-          </fieldset>
+  </div>
+  <!--Модальное окно-->
+  <div class="overlay">
+    <section class="modal">
+      <h2>
+        Поиск гостиницы в Седоне
+      </h2>
+      <button class="button modal-close-button" type="button">
+        <span class="visually-hidden">Закрыть окно</span>
+      </button>
+      <form action="https://echo.htmlacademy.ru" class="modal-form" method="post">
+        <fieldset class="visit-dates">
+          <legend class="visually-hidden">
+            Даты посещения
+          </legend>
+          <label class="modal-label">
+            Дата заезда:<input type="date" name="arrival-date" class="modal-input arrival-date">
+          </label>
+          <span class="error-data">
+            Мы не можем отправить вас в прошлое.
+          </span>
+          <label class="modal-label">
+            Дата выезда:<input type="date" name="departure-date" class="modal-input departure-date">
+          </label>
           <span class="free-rooms">
             На эти даты есть свободные номера. Пока есть.
           </span>
-          <fieldset>
-            <legend class="visually-hidden">
-              Количество постояльцев
-            </legend>
-            <label for="adults" class="modal-label">Взрослые:</label>
+        </fieldset>
+        <fieldset class="guests-number">
+          <legend class="visually-hidden">
+            Количество постояльцев
+          </legend>
+          <label for="adults" class="modal-label modal-label-short">Взрослые:</label>
+          <div class="quantity-selection">
             <button type="button" class="button-modal previous-button">
               <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
             </button>
-            <input type="number" name="number-adults" id="adults" class="modal-input">
+            <input type="number" name="number-adults" id="adults" class="modal-input modal-input-short">
             <button type="button" class="button-modal next-button">
               <span class="visually-hidden">Увеличить количество взрослых на 1</span>
             </button>
-            <label for="kids" class="modal-label">Дети:</label>
-            <span class="modal-kids">i</span>
+          </div>
+          <label for="kids" class="modal-label modal-label-short">Дети:</label>
+          <span class="modal-kids"></span>
+          <div class="tooltip-kids-info">
+            <h3 class="visually-hidden">
+              Условия размещения детей
+            </h3>
+            <p class="conditions">
+              Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+            </p>
+          </div>
+          <div class="quantity-selection">
             <button type="button" class="button-modal previous-button">
               <span class="visually-hidden">Уменьшить количество детей на 1</span>
             </button>
-            <input type="number" name="number-kids" id="kids" class="modal-input">
+            <input type="number" name="number-kids" id="kids" class="modal-input modal-input-short">
             <button type="button" class="button-modal next-button">
               <span class="visually-hidden">Увеличить количество детей на 1</span>
             </button>
-          </fieldset>
-          <button type="submit" class="search-button">
-            Найти
-          </button>
-        </form>
-        <div class="tooltip-kids-info">
-          <h3 class="visually-hidden">
-            Условия размещения детей
-          </h3>
-          <p class="conditions">
-            Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-          </p>
-        </div>
-      </section>
-    </div>
+          </div>
+        </fieldset>
+        <button type="submit" class="button search-button modal-search-button">
+          Найти
+        </button>
+      </form>
+    </section>
   </div>
 </body>
 
