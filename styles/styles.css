@@ -381,7 +381,7 @@ body {
   display: inline-block;
   width: 100%;
   height: 100%;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -400,7 +400,7 @@ body {
 .navigation-favorites {
   width: 100%;
   height: 100%;
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -545,7 +545,7 @@ body {
 
 .subtitle-span {
   display: block;
-margin-left: -16px;
+  margin-left: -16px;
 }
 
 .subtitle-bottom {
@@ -1237,22 +1237,21 @@ margin-left: -16px;
   background-color: #FFFFFF;
   border-radius: 4px;
   line-height: 21px
-
 }
 
-#pool:checked + .checkbox-label::before {
+#pool:checked+.checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#parking:checked + .checkbox-label::before {
+#parking:checked+.checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#wifi:checked + .checkbox-label::before {
+#wifi:checked+.checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
