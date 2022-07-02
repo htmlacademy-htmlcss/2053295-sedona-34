@@ -378,19 +378,42 @@ body {
 }
 
 .navigation-search {
-  padding: 4px 0 0 1px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-search::before {
-  content: url("../images/icons/search.svg");
+  content: "";
+  margin-bottom: 2px;
+  width: 18px;
+  height: 18px;
+  background-image: url("../images/icons/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .navigation-favorites {
-  padding-top: 2px;
+  width: 100%;
+  height: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation-favorites::before {
-  content: url("../images/icons/favorite.svg");
+  content: "";
+  width: 18px;
+  height: 17px;
+  margin-left: -1px;
+  background-image: url("../images/icons/favorite.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .navigation-icons {
@@ -1208,8 +1231,6 @@ margin-left: -16px;
   margin-right: 20px;
   margin-bottom: 1px;
   margin-left: 1px;
-  /*color: #3F5E72;*/
-  /*text-align: center;*/
   vertical-align: bottom;
   width: 20px;
   height: 20px;
@@ -1219,22 +1240,19 @@ margin-left: -16px;
 
 }
 
-#pool:checked+.checkbox-label:before {
-  /*content: url("../images/icons/check-mark.svg");*/
+#pool:checked + .checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#parking:checked+.checkbox-label:before {
-  /*content: url("../images/icons/check-mark.svg");*/
+#parking:checked + .checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#wifi:checked+.checkbox-label:before {
-  /*content: url("../images/icons/check-mark.svg");*/
+#wifi:checked + .checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
