@@ -646,7 +646,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   align-self: center;
-  margin-left: 5px;
+  margin: 2px 17px 0 0;
+  transition: all 0.3s ease 0s;
 }
 
 .booking-card-price {
@@ -967,7 +968,7 @@ body {
   color: #fff;
   background-color: transparent;
   margin: 0;
-  padding: 14px 18px 0 22px;
+  padding: 15px 18px 0 23px;
 }
 
 .stars {
@@ -1347,11 +1348,15 @@ body {
 
 /*Модальное окно*/
 .overlay {
-  display: none;
+  display: block;
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
+}
+
+.modal-close {
+  display: none;
 }
 
 .modal {
@@ -1375,8 +1380,25 @@ body {
   background-image: url("../images/icons/close-button.svg");
   background-position: center;
   background-repeat: no-repeat;
-  padding: 26px;
+  padding: 23px;
   border-radius: 50%;
+  border: 3px solid #F2F2F2;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  border: 3px solid #E6E6E6;
+}
+
+.modal-close-button:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  border: 3px solid #E6E6E6;
+  opacity: 0.3;
 }
 
 .visit-dates {
@@ -1398,15 +1420,12 @@ body {
 }
 
 .modal-label-short {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-
+  width: 154px;
 }
 
 .modal-label-short:last-of-type {
-  justify-content: flex-end;
-  margin-left: 37px;
+  margin-left: 56px;
+  width: 54px;
 }
 
 .modal-input {
@@ -1418,12 +1437,28 @@ body {
   background-color: #f2f2f2;
   justify-self: stretch;
   padding: 14px 19px 13px;
+
 }
 
 .modal-input-short {
-  padding: 15px 0 14px 10px;
-  min-width: 22px;
+  padding: 15px 0 14px 0;
+  width: 22px;
   text-align: center;
+  font-family: 'PT Sans';
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+
+}
+
+.modal-input-short::-webkit-outer-spin-button,
+.modal-input-short::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-input-short[type=number] {
+  -moz-appearance: textfield;
 }
 
 .error-data {
@@ -1442,33 +1477,48 @@ body {
 }
 
 .button-modal {
-  border: none;
+  border: 3px solid #f2f2f2;
+  border-radius: 4px;
   background-color: #f2f2f2;
   vertical-align: middle;
   padding: 0 25px;
   cursor: pointer;
+  opacity: 0.3;
+  box-sizing: border-box;
+}
+
+.button-modal:hover {
+  opacity: 1;
+}
+
+.button-modal:focus {
+  opacity: 1;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.button-modal:active {
+  opacity: 0.2;
 }
 
 .previous-button {
   background-image: url("../images/icons/minus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 14px 0 0 14px;
 }
 
 .next-button {
   background-image: url("../images/icons/plus.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 0 4px 4px 0;
 }
 
 .guests-number {
   margin: 0 0 40px 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 155px 133px auto auto 133px;
   border: none;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .quantity-selection {
@@ -1530,8 +1580,12 @@ body {
   top: 0;
   left: 50%;
   transform: translate(-50%, -100%) rotateZ(180deg);
-  border: 10px solid transparent;
-  border-top: 10px solid #333333;
+  border: 9px solid transparent;
+  border-top: 9px solid #333333;
+}
+
+.modal-kids:hover {
+  background-color: #68A2CA;
 }
 
 .modal-kids:hover+.tooltip-kids-info {
