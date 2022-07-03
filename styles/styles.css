@@ -1547,14 +1547,13 @@ body {
 
 .modal-search-button:focus {
   background-color: #68A2CA;
+  border: 3px solid #756257;
 }
 
 .modal-search-button:active {
+  border:  none;
   color: rgba(255, 255, 255, 0.3);
-}
-
-.modal-search-button:active {
-  background-color: #E5E5E5;
+  background-color: #68A2CA;
 }
 
 .tooltip-kids-info {
