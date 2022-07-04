@@ -134,7 +134,7 @@ body {
   padding: 0;
   margin: 0;
   grid-template-columns: repeat(3, 400px);
-  grid-template-rows: repeat(4, 384px);
+  grid-template-rows: repeat(4, minmax(384px, 1fr));
 }
 
 .landscape {
@@ -1410,7 +1410,7 @@ body {
 .modal-label {
   display: grid;
   grid-template-columns: 155px 1fr;
-  grid-template-rows: 50px;
+  grid-template-rows: minmax(50px, 1fr);
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -1424,11 +1424,13 @@ body {
 }
 
 .modal-label-short:last-of-type {
+  display: block;
   margin-left: 56px;
   width: 54px;
 }
 
 .modal-input {
+  font-weight: 700;
   font-size: 18px;
   line-height: 21px;
   color: #000;
@@ -1437,9 +1439,27 @@ body {
   background-color: #f2f2f2;
   justify-self: stretch;
   padding: 14px 19px 13px;
+  background-image: url("../images/icons/date.svg");
+  background-position: 385px 17px;
+  background-repeat: no-repeat;
 
 }
+.modal-input:hover {
+background-color: #E6E6E6;
+}
+.modal-input:focus {
+  background-color: #E6E6E6;
+  border: 3px solid #83B3D3;
+border-radius: 4px;;
+}
+.modal-input:active {
+  background-color: #FFFFFF;
+  border: 2px solid #000000,
+}
+.modal-input:active::placeholder {
 
+  color: rgba(0, 0, 0, 1.0);
+}
 .modal-input-short {
   padding: 15px 0 14px 0;
   width: 22px;
@@ -1451,6 +1471,19 @@ body {
 
 }
 
+.modal-input::placeholder {
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
+}
+.modal-input::-webkit-outer-spin-button,
+.modal-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-input[type=number] {
+  -moz-appearance: textfield;
+}
 .modal-input-short::-webkit-outer-spin-button,
 .modal-input-short::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -1514,11 +1547,13 @@ body {
 }
 
 .guests-number {
+position: relative;
   margin: 0 0 40px 0;
   padding: 0;
   border: none;
   display: flex;
   justify-content: flex-start;
+  align-items: center;
 }
 
 .quantity-selection {
@@ -1526,6 +1561,7 @@ body {
   justify-content: space-between;
   background-color: #F2F2F2;
   border-radius: 4px;
+  height: 50px;
 }
 
 .modal-search-button {
@@ -1561,8 +1597,8 @@ body {
   opacity: 0;
   transition: all 0.5s ease 0s;
   position: absolute;
-  top: 395px;
-  left: 352px;
+  bottom: -147px;
+  left: 282px;
   width: 256px;
   min-height: 143px;
   background-color: #333333;
