@@ -1297,16 +1297,15 @@ body {
   line-height: 21px
 }
 
-.checkbox-label:hover::before {
+.checkbox:hover+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
 }
-
-.checkbox-label:focus::before {
-  box-shadow: 0 0 0 3px #83B3D3;
+.checkbox:focus+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
 }
 
-.checkbox-label:active::before {
+.checkbox:focus+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.3);
 }
 
@@ -1320,30 +1319,20 @@ body {
   appearance: none;
 }
 
-.options-label:hover::before {
+.checkbox:hover+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
 }
-
-.options-label:focus::before {
-  box-shadow: 0 0 0 3px #83B3D3;
+.checkbox:focus+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
 }
 
-.options-label:active::before {
+.checkbox:active+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.3);
 }
 
-.options-label:before {
-  content: "";
-  color: #3F5E72;
-  display: inline-block;
-  border-radius: 50%;
-  margin-right: 20px;
-  margin-bottom: 4px;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  background: #FFFFFF;
+.radio:focus+.options-label::before {
+  outline: 3px solid #83B3D3;
 }
 
 .options-label:before {
