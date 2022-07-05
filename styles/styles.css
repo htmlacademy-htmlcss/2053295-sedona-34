@@ -1306,7 +1306,6 @@ body {
 }
 
 .checkbox:focus+.checkbox-label::before {
-  background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
 }
 
