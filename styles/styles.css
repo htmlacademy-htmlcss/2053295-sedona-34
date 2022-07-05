@@ -317,6 +317,7 @@ body {
 .price-choice:hover {
   border-color: rgba(255, 255, 255, 0.6);
 }
+
 .options-choice:focus {
   outline: 3px solid #83B3D3;
 }
@@ -1303,6 +1304,7 @@ body {
 .checkbox:hover+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
 }
+
 .checkbox:focus+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
@@ -1325,6 +1327,7 @@ body {
 .checkbox:hover+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
 }
+
 .checkbox:focus+.checkbox-label::before {
   background: rgba(255, 255, 255, 0.6);
   outline: 3px solid #83B3D3;
@@ -1477,9 +1480,11 @@ body {
   font-size: 18px;
   color: #000000;
 }
+
 .modal-input-short:focus {
   outline: none;
 }
+
 .modal-input::placeholder {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
