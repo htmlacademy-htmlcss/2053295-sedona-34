@@ -4,8 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="styles/styles.css">
-  <link type="image/x-icon" href="images/icons/favicon.ico" rel="shortcut icon">
-  <link type="Image/x-icon" href="images/icons/favicon.ico" rel="icon">
+  <link rel="icon" href="favicon.ico">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -213,7 +212,7 @@
     </footer>
   </div>
   <!--Модальное окно-->
-  <div class="overlay">
+  <div class="overlay visually-hidden">
     <section class="modal">
       <h2>
         Поиск гостиницы в Седоне
@@ -227,13 +226,13 @@
             Даты посещения
           </legend>
           <label class="modal-label">
-            Дата заезда:<input type="date" name="arrival-date" class="modal-input arrival-date">
+            Дата заезда:<input type="text" name="arrival-date" class="modal-input arrival-date" placeholder="27 апреля 2020">
           </label>
           <span class="error-data">
             Мы не можем отправить вас в прошлое.
           </span>
           <label class="modal-label">
-            Дата выезда:<input type="date" name="departure-date" class="modal-input departure-date">
+            Дата выезда:<input type="text" name="departure-date" class="modal-input departure-date" placeholder="1 сентября 2021">
           </label>
           <span class="free-rooms">
             На эти даты есть свободные номера. Пока есть.
