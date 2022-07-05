@@ -1324,19 +1324,6 @@ body {
   appearance: none;
 }
 
-.checkbox:hover+.checkbox-label::before {
-  background: rgba(255, 255, 255, 0.6);
-}
-
-.checkbox:focus+.checkbox-label::before {
-  background: rgba(255, 255, 255, 0.6);
-  outline: 3px solid #83B3D3;
-}
-
-.checkbox:active+.checkbox-label::before {
-  background: rgba(255, 255, 255, 0.3);
-}
-
 .radio:focus+.options-label::before {
   outline: 3px solid #83B3D3;
 }
