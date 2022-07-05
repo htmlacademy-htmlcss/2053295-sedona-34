@@ -299,7 +299,7 @@ body {
 }
 
 .price-choice {
-  border: 2px solid #fff;
+  outline: 2px solid #FFFFFF;
 }
 
 .price-choice:first-child {
@@ -315,16 +315,20 @@ body {
 }
 
 .price-choice:hover {
-  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.options-choice:focus {
+  outline: 3px solid #83B3D3;
 }
 
 .price-choice:focus {
   box-shadow: inset 0 0 0 3px rgba(131, 179, 211, 1.0),
-    0 0 0 3px rgba(131, 179, 211, 1.0);
+    0 0 0 6px rgba(131, 179, 211, 1.0);
 }
 
 .price-choice:active {
   background-color: #756257;
+  outline: 2px solid #FFFFFF;
 }
 
 .price-input {
@@ -337,7 +341,6 @@ body {
   color: #FFFFFF;
   border: none;
   background-color: transparent;
-  appearance: none;
 }
 
 .price-limits {
@@ -1482,16 +1485,6 @@ body {
 .modal-input::placeholder {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
-}
-
-.modal-input::-webkit-outer-spin-button,
-.modal-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.modal-input[type=number] {
-  -moz-appearance: textfield;
 }
 
 .modal-input-short::-webkit-outer-spin-button,
