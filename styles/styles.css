@@ -1364,10 +1364,6 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-close {
-  display: none;
-}
-
 .modal {
   position: absolute;
   top: 396px;
@@ -1459,13 +1455,13 @@ body {
 
 .modal-input:focus {
   background-color: #E6E6E6;
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   border-radius: 4px;
 }
 
 .modal-input:active {
   background-color: #FFFFFF;
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .modal-input:active::placeholder {
@@ -1481,7 +1477,9 @@ body {
   font-size: 18px;
   color: #000000;
 }
-
+.modal-input-short:focus {
+  outline: none;
+}
 .modal-input::placeholder {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
