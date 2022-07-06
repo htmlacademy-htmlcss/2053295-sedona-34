@@ -1354,19 +1354,19 @@ body {
   line-height: 21px
 }
 
-.checkbox:hover+.checkbox-label::before {
+.checkbox:hover + .checkbox-label::before {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-.checkbox:focus+.checkbox-label::before {
+.checkbox:focus + .checkbox-label::before {
   outline: 3px solid #83B3D3;
 }
 
-.checkbox:active+.checkbox-label::before {
+.checkbox:active + .checkbox-label::before {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.checkbox:checked+.checkbox-label::before {
+.checkbox:checked + .checkbox-label::before {
   background-image: url("../images/icons/check-mark.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -1376,7 +1376,7 @@ body {
   appearance: none;
 }
 
-.radio:focus+.options-label::before {
+.radio:focus + .options-label::before {
   outline: 3px solid #83B3D3;
 }
 
@@ -1393,7 +1393,7 @@ body {
   vertical-align: middle;
 }
 
-.radio:checked+.options-label:before {
+.radio:checked + .options-label:before {
   content: url("../images/icons/radio-button-checked.svg");
 }
 
@@ -1669,7 +1669,7 @@ body {
   background-color: #68A2CA;
 }
 
-.modal-kids:hover+.tooltip-kids-info {
+.modal-kids:hover + .tooltip-kids-info {
   visibility: visible;
   opacity: 1;
 }
