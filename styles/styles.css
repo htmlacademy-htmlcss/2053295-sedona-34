@@ -139,6 +139,7 @@ body {
 
 .landscape {
   grid-column: span 2;
+  background-color: #f1bfa8;
 }
 
 .welcome-heading h2 {
@@ -275,7 +276,7 @@ body {
 .welcome-banner {
   position: relative;
   display: flex;
-  background-color: #300c1c;
+  background-color: #d8e4f0;
   background-image: url("../images/pictures/index-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,11 +290,11 @@ body {
 .price-choice-wrapper {
   display: flex;
   justify-content: flex-start;
-  margin: 0 0 30px 0;
+  margin: 0 0 32px 0;
 }
 
 .price-housing {
-  margin-bottom: 36px;
+  margin-bottom: 38px;
   padding: 3px 0 0 1px;
   letter-spacing: 1px;
 }
@@ -489,7 +490,9 @@ body {
   border-radius: 4px;
   transition: all 0.3s ease 0s;
 }
-
+.button:focus {
+  outline-width: 0;
+}
 .search-hotel-button {
   margin-left: -2px;
   padding: 12px 149px;
@@ -662,6 +665,7 @@ body {
   align-self: center;
   margin: 2px 17px 0 0;
   transition: all 0.3s ease 0s;
+  font-size: 0;
 }
 
 .booking-card-price {
@@ -688,7 +692,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #300c1c;
+  background-color: #90acba;
   background-image: url("../images/pictures/background1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -707,7 +711,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   background-color: #82B3D3;
-  margin: 0 1px 16px 0;
+  margin: 0 1px 13px 0;
   transition: all 0.3s ease 0s;
 }
 
@@ -717,6 +721,7 @@ body {
 
 .apply-button:focus {
   background-color: #68A2CA;
+  outline-width: 0;
 }
 
 .apply-button:active {
@@ -724,6 +729,8 @@ body {
 }
 
 .reset-button {
+  position: relative;
+  top: 3px;
   width: 100px;
   padding: 4px;
   font-weight: 400;
@@ -739,7 +746,8 @@ body {
 }
 
 .reset-button:focus {
-  box-shadow: 0 0 0 3px #83B3D3;
+  outline-width: 0;
+  outline: 3px solid #83B3D3;
 }
 
 .reset-button:active {
@@ -796,11 +804,11 @@ body {
 
 .search-form {
   color: #fff;
-  background-color: #300c1c;
+  background-color: #4d6a81;
   background-image: url("../images/pictures/background2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 35px 70px 67px;
+  padding: 35px 70px 70px;
 }
 
 .breadcrumbs-item {
@@ -828,6 +836,7 @@ body {
   text-decoration: none;
   color: #fff;
   transition: all 0.3s ease 0s;
+  outline-width: 0;
 }
 
 .breadcrumbs-link:hover {
@@ -835,7 +844,7 @@ body {
 }
 
 .breadcrumbs-link:focus {
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 1.0);
 }
 
 .breadcrumbs-link:active {
@@ -870,6 +879,7 @@ body {
   border-radius: 4px;
   background-repeat: no-repeat;
   transition: all 0.3s ease 0s;
+  outline-width: 0;
 }
 
 .button-view-current {
@@ -881,11 +891,11 @@ body {
 }
 
 .button-view-selection:focus {
-  border: 2px solid #000000;
+  border-color: #68A2CA;
 }
 
 .button-view-selection:active {
-  border: 2px solid #68A2CA;
+  border-color: #000000;
 }
 
 .button-view-list {
@@ -980,6 +990,7 @@ body {
 .select-control {
   width: 290px;
   margin-right: 78px;
+  margin-top: 1px;
   padding: 13px 23px 12px 18px;
   font-size: 18px;
   border: 2px solid #e5e5e5;
@@ -1099,13 +1110,13 @@ body {
 
 .range-area {
   padding: 0 0 2px 0;
-  margin: 0 70px 0 0;
+  margin: 0 72px 0 0;
   border: none;
 }
 
 .search-result-display {
   display: flex;
-  padding: 55px 71px 56px 72px;
+  padding: 54px 71px 56px 72px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -1268,6 +1279,7 @@ body {
 .logo-html-academy {
   margin-top: 4px;
   transition: all 0.3s ease 0s;
+  background-color: #FFFFFF;
 }
 
 .logo-html-academy:hover {
@@ -1602,7 +1614,7 @@ body {
 }
 
 .tooltip-kids-info::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 50%;
@@ -1637,28 +1649,38 @@ body {
 }
 
 .range-toggle {
+  display: block;
   position: absolute;
   top: -10px;
   width: 4px;
   height: 4px;
+  width: 20px;
+  height: 20px;
   background-color: #FFFFFF;
-  border: 8px solid #ffffff;
+  /*border: 8px solid #ffffff;*/
   border-radius: 5px;
   cursor: pointer;
+  border: none;
+}
+
+.range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:focus {
-  box-shadow: 0 0 0 3px #83B3D3;
+  outline-width: 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .range-toggle:active {
-  box-shadow: 0 0 0 2px #83B3D3;
+  outline: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
 }
 
 .range-toggle-min {
-  left: 0;
+  left: -2px;
 }
 
 .range-toggle-max {
-  left: 217px;
+  left: 215px;
 }
