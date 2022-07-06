@@ -1696,12 +1696,14 @@ body {
 .calendar-button:active {
   background-color: #FFFFFF;
 }
+
 .calendar-button-arrival {
-top: 18px;
+  top: 18px;
   right: 20px;
 }
+
 .calendar-button-departure {
-top: 108px;
+  top: 108px;
   right: 20px;
 }
 
