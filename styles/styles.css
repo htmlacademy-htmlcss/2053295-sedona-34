@@ -490,9 +490,11 @@ body {
   border-radius: 4px;
   transition: all 0.3s ease 0s;
 }
+
 .button:focus {
   outline-width: 0;
 }
+
 .search-hotel-button {
   margin-left: -2px;
   padding: 12px 149px;
@@ -974,6 +976,26 @@ body {
   background-repeat: no-repeat;
 }
 
+.select-quantity:hover {
+  border-color: #68A2CA;
+}
+
+.select-quantity:focus {
+  outline-width: 0;
+  border-color: #68A2CA;
+}
+
+.select-quantity:active {
+
+  border-color: #3F5E72;
+}
+
+.select-quantity:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  ;
+}
+
+
 .large-text {
   margin: 0;
   font-weight: 700;
@@ -1000,6 +1022,25 @@ body {
   background-image: url("../images/icons/select-arrow.svg");
   background-position: calc(100% - 18px) 50%;
   background-repeat: no-repeat;
+}
+
+.select-control:hover {
+  border-color: #68A2CA;
+}
+
+.select-control:focus {
+  outline-width: 0;
+  border-color: #68A2CA;
+}
+
+.select-control:active {
+
+  border-color: #3F5E72;
+}
+
+.select-control:disabled {
+  border-color: rgba(0, 0, 0, 0.3);
+  ;
 }
 
 .conditions {
@@ -1414,6 +1455,7 @@ body {
 }
 
 .modal-label {
+  position: relative;
   display: grid;
   grid-template-columns: 155px 1fr;
   grid-template-rows: minmax(50px, 1fr);
@@ -1445,7 +1487,6 @@ body {
   background-color: #f2f2f2;
   justify-self: stretch;
   padding: 14px 19px 13px;
-  background-image: url("../images/icons/date.svg");
   background-position: 385px 17px;
   background-repeat: no-repeat;
 }
@@ -1486,6 +1527,7 @@ body {
 .modal-input::placeholder {
   font-weight: 700;
   color: rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.05em;
 }
 
 .modal-input-short::-webkit-outer-spin-button,
@@ -1632,6 +1674,31 @@ body {
   opacity: 1;
 }
 
+.calendar-button {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  font-size: 0;
+  background-color: transparent;
+  background-image: url("../images/icons/date.svg");
+  cursor: pointer;
+}
+
+.calendar-button:hover {
+  background-color: #E6E6E6;
+}
+
+.calendar-button:focus {
+  outline: 2px solid #83B3D3;
+}
+
+.calendar-button:active {
+  background-color: #FFFFFF;
+}
+
 /*Ползунки*/
 .range-controls {
   position: relative;
@@ -1657,7 +1724,6 @@ body {
   width: 20px;
   height: 20px;
   background-color: #FFFFFF;
-  /*border: 8px solid #ffffff;*/
   border-radius: 5px;
   cursor: pointer;
   border: none;
@@ -1669,6 +1735,7 @@ body {
 
 .range-toggle:focus {
   outline-width: 0;
+  outline: 3px solid #83B3D3;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
