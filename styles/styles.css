@@ -1297,6 +1297,7 @@ body {
 }
 
 .advantage-box-housing {
+  padding: 0 110px;
   background-color: rgba(131, 179, 211, .12);
   background-image: url("../images/icons/housing.svg");
 }
